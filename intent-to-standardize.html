@@ -21,7 +21,9 @@
       border-top: 1px solid black;
       padding-top: 0.5ex;
     }
-
+    *:target {
+      background-color: yellow;
+    }
     </style>
   </head>
 <body>
@@ -29,51 +31,51 @@
 
 <h2>Body:</h2>
 
-<p><strong>Supporter emails</strong></p>
+<p id='contact'><strong>Supporter emails</strong></p>
 
 <p>&nbsp; example@example.com, example2@example.com&nbsp;</p>
 
-<p><strong>Proposal</strong></p>
+<p id='proposal'><strong>Proposal</strong></p>
 
 <p>Link to proposal (preferably in a github repository).&nbsp; You should have at least an unofficial proposal in hand and&#x2F;or have discussed the API within the HTML Incubator Community Group before sending an intent to standardize.&nbsp; If your proposal is not yet at this stage of maturity, feel free to solicit feedback informally on discourse instead. You may be asked to create a github repository if there isn&#x27;t one.</p>
 
-<p><strong>Summary</strong></p>
+<p id='summary'><strong>Summary</strong></p>
 
 <p>Give a high-level description of your proposal.</p>
 
-<p><strong>Motivation and Use Cases</strong></p>
+<p id='motivation'><strong>Motivation and Use Cases</strong></p>
 
 <p>Explain why the web needs this change.&nbsp; It may be useful to describe what web developers are forced to do without it.&nbsp; Include links to back up your claims, including data.</p>
 
-<p><strong>Compatibility Risk</strong></p>
+<p id='risk'><strong>Compatibility Risk</strong></p>
 
 <p>Please characterize how much we might regret standardizing this new feature were we might to change or remove it in the future. If you don&#8217;t have a github repository, include in this email links to relevant discussions, or documentation about support for the feature on the Web.</p>
 
-<p><strong>Ongoing technical constraints</strong></p>
+<p id='constraints'><strong>Ongoing technical constraints</strong></p>
 
 <p>Do you anticipate adding any ongoing technical constraints to the deployed user agents while implementing this feature?</p>
 
-<p><strong>Will this feature be supported in all environments (desktop, mobile, tablets, TV, eBooks, automotive, etc.)?</strong></p>
+<p id='device_independence'><strong>Will this feature be supported in all environments (desktop, mobile, tablets, TV, eBooks, automotive, etc.)?</strong></p>
 
 <p>Yes or no.&nbsp; If no, explain why certain user agents will not be included in your implementation.</p>
 
-<p><strong>Link to implementation experience and demos</strong></p>
+<p id='implementations'><strong>Link to implementation experience and demos</strong></p>
 
 <p>If your proposal has implementation experience or demos, please provide links to those. This includes common patterns in deployed libraries. Otherwise, indicate if there isn&#x27;t none.</p>
 
-<p><strong>Data</strong></p>
+<p id='data'><strong>Data</strong></p>
 
 <p>What data do you have available that indicates that this enhancement will affect many users of the Web.&nbsp; Quantify the fraction of websites that are currently using something similar to this feature.&nbsp; Or, if a new feature, characterize the reason that you expect this to be far reaching.</p>
 
-<p><strong>Security and Privacy</strong></p>
+<p id='security'><strong>Security and Privacy</strong></p>
 
 <p>Outline the security and privacy implications of your proposal for end-users. Otherwise, indicate if there are none.</p>
 
-<p><strong>Accessibility</strong></p>
+<p id='a11y'><strong>Accessibility</strong></p>
 
 <p>Outline the implications of your proposal relative to access by everyone regardless of disability. Otherwise, indicate if there are none.</p>
 
-<p><strong>Internationalization</strong></p>
+<p id='i18n'><strong>Internationalization</strong></p>
 
 <p>Outline the implications of your proposal when used with different languages, scripts, and cultures. Otherwise, indicate if there are none.</p>
 

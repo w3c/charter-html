@@ -1,0 +1,17 @@
+body {
+  max-width: 60em;
+  margin: auto;;
+}
+h1 { font-size: large;}
+h2 { color: black; font-size: normal;}
+p { margin-top: 1em;}
+.sign {
+  font-size: small;
+  margin-top: 2em;
+  font-style: italic;
+  border-top: 1px solid black;
+  padding-top: 0.5ex;
+}
+*:target {
+  background-color: yellow;
+}
