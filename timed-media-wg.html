@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Timed Media Working Group</title>
+<link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.w3.org/Guide/pubrules-style.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css"/>
+</head>
+<body>
+<div id="template">
+  <ul id="navbar" style="font-size: small">
+    <li><a href="#scope">Scope</a></li><li><a href="#deliverables">Deliverables</a></li>
+    <li><a href="#coordination">Dependencies and Liaisons</a></li>
+    <li><a href="#participation">Participation</a></li>
+    <li><a href="#communication">Communication</a></li>
+    <li><a href="#decisions">Decision Policy</a></li>
+    <li><a href="#patentpolicy">Patent Policy</a></li>
+    <li><a href="#about">About this Charter</a></li>
+  </ul>
+    
+  <p><a href="http://www.w3.org/" shape="rect"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"/></a>  <a class="domainlogo" href="/Interaction/" shape="rect"><img src="http://www.w3.org/Icons/interaction" alt="Interaction Domain"/></a></p>
+
+    <h1 id="title">[DRAFT] Timed Media Working Group Charter</h1>
+
+    <p class="mission">The
+    <strong>mission</strong> of the Timed Media Working Group, part of
+    the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>, is to
+    further develop timed media capabilities in the Open Web Platform, including but not limited to video and audio features.</p>
+
+    <p>The Timed Media Working Group will expand upon the basic capabilities provided by HTML5's <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> media elements as well as develop lower level APIs that provide the foundation for featires developed by the Audio Working Group, the WebRTC Working Group, and others.</p>
+
+    <div class="noprint">
+    <p class="join"><a href="#">Join the
+    Timed Media Working Group</a>.</p>
+    </div>
+
+    <table class="summary-table">
+      <tr id="Start"><th rowspan="1" colspan="1">Start date</th><td rowspan="1" colspan="1">1 October 2015</td></tr>
+      <tr id="Duration"><th rowspan="1" colspan="1">End date</th><td rowspan="1" colspan="1">30 September 2017</td></tr>
+      <tr><th rowspan="1" colspan="1">Confidentiality</th><td rowspan="1" colspan="1">Proceedings are <a href="http://www.w3.org/2014/Process-20140801/#confidentiality-levels" shape="rect">public</a></td></tr>
+      <tr><th rowspan="1" colspan="1">Initial Chairs</th><td rowspan="1" colspan="1"><span class="toadd">CHAIR INFO</span></td></tr>
+      <tr><th rowspan="1" colspan="1">Initial Team Contacts<br/>
+        (FTE %: 10)</th><td rowspan="1" colspan="1"><span class="toadd">TEAM CONTACT INFO</span></td></tr>
+        <tr><th rowspan="1" colspan="1">Usual Meeting Schedule</th><td rowspan="1" colspan="1">
+          <strong>Teleconferences:</strong> weekly coordination calls will be held, with additional calls as needed.<br>
+          <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants.
+        </tr>
+    </table>
+
+    <div class="goals">
+      <h2 id="goals">Goals</h2>
+
+      <p>The Web is increasingly used to share and consume timed media (including video and audio). The Timed Media Working Group will work on specifications for enhancing these experiences through new mark-up and APIs. Several other working groups (such as the Audio Working Group and the Web Real-Time Communications Working Group are building sophisticated capabilities that need a common basic set of "bedrock" APIs. The Timed Media Working Group will coordinate the requirements from these and other groups and produce specifications to address these needs.</p>
+    </div>
+
+    <div class="scope">
+      <h2 id="scope">Scope</h2>
+
+      <p>The scope of the Timed Media Working Group covers technologies related to the orchestration and playback of timed media such as video and audio. The Timed Media Working Group deliverables must address issues of <strong>accessibility, device independence, interoperability, mobility, privacy, and security</strong>. Features that aid accessibility such as captions and transcripts are in scope. Functionality to coordinate other interactions with timed events in the media files is in scope.</p>
+      
+	  <h3>Success Criteria</h3>
+
+    <p>In order to advance beyond Candidate Recommendation, each specification is expected to have at least two independent implementations of each of feature defined in the specification.</p>
+      
+	 <h3>Out of Scope</h3>
+
+   <p>The group will not work on developing codecs, new media formats, or new encryption algorithms.</p>
+   <p>The group will not work on audio processing APIs or real-time communication but will liaise with the Audio Working Group and the Web Real-Time Communications Working Group to ensure lower level capabilities
+    created by the Timed Media Working Group are compatible with those groups' goals.</p>
+  </div>
+
+    <div class="deliverables">
+        <h2 id="deliverables">Deliverables</h2>
+
+        <h3 id="rec-track">Recommendation-Track Deliverables</h3>
+        <p>The working group will deliver at least the following W3C Recommendations:</p>
+
+        <dl>
+          <dt><a href="http://www.w3.org/TR/media-source/">Media Source Extensions</a></dt>
+          <dd>A specification that extends HTMLMediaElement to allow JavaScript to generate media streams for playback. Allowing JavaScript to generate streams facilitates a variety of use cases like adaptive streaming and time shifting live streams.</dd>
+          <dt><a href="http://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a></dt>
+          <dd>This specification extends HTMLMediaElement providing APIs to control playback of protected content. The API supports use cases ranging from simple clear key decryption to high value video (given an appropriate user agent implementation). License/key exchange is controlled by the application, facilitating the development of robust playback applications supporting a range of content decryption and protection technologies.</dd>
+        </dl>
+
+	    <h3>Other Deliverables</h3>
+      <p>The Timed Media Working Group may publish other specifications that are within its scope. In particular, the group may produce specifications for the following features:</p>
+
+      <dl>
+        <dt>Transcript</dt>
+        <dd>If the current Transcript proposal gains implementation support and momentum.</dd>
+        <dt>Captioning support</dt>
+        <dd>The group may produce a specification to enhance the timed text and caption support available to HTML5 media elements. At a future date, should the Timed Text Working Group choose to halt work on the WebVTT specification, the Timed Media Working Group may take up this work.</dd>
+        <dt>Inband Track Support</dt>
+        <dd>If the Media Resource In-band Tracks Community Group produces a mature specification with implementation support then the Timed Media Working Group may adopt this work onto the Recommendation Track.</dd>
+        <dt>Low Level Audio and Video support</dt>
+        <dd>The Timed Media Working Group may work on low-level media APIs to support the work of the Audio and Web Real-Time Communications Working Groups.</dd>
+        <dt>Secondary Screen Support</dt>
+        <dd>The Timed Media Working Group may coordinate work on secondary screen playback with the Second Screen Presentation Working Group.</dd>
+      </dl>
+  	
+	
+	    <h3 id="milestones">Milestones</h3>
+	    <table class="roadmap" width="80%"><caption>
+		Milestones
+	      </caption>
+        <tfoot><tr><td colspan="7" rowspan="1">Note: The group will document significant changes from this initial schedule on the group home page.</td></tr></tfoot>
+
+        <tbody>
+          <tr>
+            <th rowspan="1" colspan="1">Specification</th>
+            <th rowspan="1" colspan="1"><acronym title="First Working Draft">FPWD</acronym></th>
+            <th rowspan="1" colspan="1"><acronym title="Last Call Working Draft (2014 Process)">LC</acronym> / <acronym title="Candidate Recommendation">CR</acronym></th>
+            <th rowspan="1" colspan="1"><acronym title="Proposed Recommendation">PR</acronym></th>
+            <th rowspan="1" colspan="1"><acronym title="Recommendation">Rec</acronym></th>
+          </tr>
+          <tr>
+            <th rowspan="1" colspan="1">Media Source Extensions (MSE)</th>
+            <td class="WD1" rowspan="1" colspan="1">October 2015</td>
+            <td class="CR" rowspan="1" colspan="1">October 2015</td>
+            <td class="PR" rowspan="1" colspan="1">Q4 2015</td>
+            <td class="REC" rowspan="1" colspan="1">Q1 2016</td>
+          </tr>
+          <tr>
+            <th rowspan="1" colspan="1">Encrypted Media Extensions (EME)</th>
+            <td class="WD1" rowspan="1" colspan="1">October 2015</td>
+            <td class="CR" rowspan="1" colspan="1">Q4 2015</td>
+            <td class="PR" rowspan="1" colspan="1">Q1 2016</td>
+            <td class="REC" rowspan="1" colspan="1">Q2 2016</td>
+          </tr>
+        </tbody>
+        </table>
+      
+    </div>
+    
+    <div class="dependencies">
+      <h2 id="coordination">Dependencies and Liaisons</h2>
+ 	<h3>W3C Groups</h3>
+	
+ 	  <dl>
+      <dt><a href="http://www.w3.org/html/wg/">HTML Working Group</a> [[<span class="toadd">Or other group maintaining HTML 5.0 spec</span>]]</dt>
+      <dd>This group maintains the HTML 5.0 specification that provides the foundation for specifications authored in the Timed Media WG.</dd>
+      <dt><a href="http://www.w3.org/2011/audio/">Audio Working Group</a></dt>
+      <dd>This group creates specifications for media online captioning including Timed Text Markup Language (TTML) and WebVTT (Web Video Text Tracks).</dd>
+      <dt><a href="http://www.w3.org/AudioVideo/TT/">Timed Text Working Group</a></dt>
+      <dd>This group creates API specifications for audio processing and is interested in low level audio device APIs.</dd>
+      <dt><a href="https://www.w3.org/community/inbandtracks/">Media Resource In-band Tracks Community Group</a></dt>
+      <dd>This group is developing a specification for exposing in-band tracks to HTML5 media elements.</dd>
+      <dt><a href="http://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
+      <dd>This group may provide advice about scenarios and requirements for the specifications.</dd>
+      <dt><a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications Working Group</a></dt>
+      <dd>This group creates API specifications for real time media and is interested in low level audio/video device APIs.</dd>
+      <dt><a href="http://www.w3.org/2014/secondscreen/">Second Screen Presentation Working Group</a></dt>
+      <dd>This group creates API specifications for controlling secondary screens for displaying web coment. The Timed Media Working Group may provide APIs to project media through a secondary screen.</dd>
+      <dt><a href="http://www.w3.org/WAI/PF/">WAI Protocols and Formats Working Group</a></dt>
+      <dd>To ensure that Timed Media WG deliverables appropriately support accessibility requirements.</dd>
+      <dt><a href="http://www.w3.org/International/core/">Internationalization Core Working Group</a></dt>
+      <dd>This group may provide advice or review to ensure that Timed Media WG deliverables meet the needs of an international Web.</dd>
+      <dt><a href="http://www.w3.org/Privacy/" shape="rect">Privacy Interest Group</a></dt>
+      <dd>The Timed Media WG will request review of specifications and communicate as necessary with this group.</dd>
+    </div>
+
+    <div class="participation">
+      <h2 id="participation">Participation</h2>
+
+      <p>To be successful, the Timed Media Working Group is expected to have 10 or more active participants for its duration, and to have the participation of industry leaders in fields relevant to the specifications it produces.</p> 
+
+      <p>The Chairs and specification Editors are expected to contribute one half-day per week towards the Working Group. There is no minimum requirement for other Participants. This Working Group will also allocate the necessary resources for building Test Suites for each specification.</p>
+
+      <p>The group also welcomes non-Members to contribute technical submissions for consideration, with the agreement from each participant to Royalty-Free licensing of those submissions under the W3C Patent Policy.</p> 
+    </div>
+
+    <div class="communication">
+      <h2 id="communication">Communication</h2>
+    	<p>This group primarily coordinates its work on the public
+    	mailing list <a href="http://lists.w3.org/Archives/Public/public-timedmedia/">public-timedmedia@w3.org</a>.
+      Administrative tasks may be conducted in Member-only communications as appropriate.
+    	</p>
+      <p>The technical work of the working group is conducted through a W3C GitHub repositort for each specification. Participants are encouraged to provide, track, and pursue technical feedback through GitHub issues and not through the mailing list. This faciliates more structured communication and makes it possible to clearly signal when an issue is closed or reopened with new information.</p>
+    </div>
+
+    <div class="decisions">
+      <h2 id="decisions">Decision Policy</h2>
+
+      <p>As explained in the Process Document (<a href="/Consortium/Process/policies#Consensus" shape="rect">section
+      3.3</a>), this group will seek to make decisions when there
+      is consensus.
+      The expectation is that typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required. However, if a decision is necessary for timely progress, but consensus is not achieved after careful consideration of the range of views presented, the Chairs should put a question out for voting within the group (allowing for remote asynchronous participation -- using, for example, email and/or web-based survey techniques) and record a decision, along with any objections. The matter should then be considered resolved unless and until new information becomes available.</p>
+
+      <p>Any resolution taken in a face-to-face meeting or teleconference is to be considered provisional until 10 working days after the publication of the resolution in draft minutes sent to the working groups mailing list. If no objections are raised on the mailing list within that time, the resolution will be considered to have consensus as a resolution of the Working Group.</p>
+
+      <p>This charter is written in accordance with <a href="/Consortium/Process/policies#Votes" shape="rect">Section
+        3.4, Votes</a> of the W3C Process Document and includes no
+        voting procedures beyond what the Process Document
+        requires.</p>
+    </div>
+
+    <div class="patent">
+      <h2 id="patentpolicy">Patent 
+      Policy 
+      </h2>
+      
+        <p>This Working Group operates under the <a href="/2014/Process-20140801/" shape="rect">W3C
+        Patent Policy</a> (1 August 2014 Version). To promote the
+        widest adoption of Web standards, W3C seeks to issue
+        Recommendations that can be implemented, according to this
+        policy, on a Royalty-Free basis.</p>
+        <p>For more information about disclosure obligations for
+        this group, please see the <a href="/2004/01/pp-impl/" shape="rect">W3C
+        Patent Policy Implementation</a>.</p>
+    </div>
+    <h2 id="about">About this Charter</h2>
+
+    <p>This charter for the Timed Media Working Group has been created according to
+    <a href="/Consortium/Process/groups#GAGeneral" shape="rect">section
+    6.2</a> of the <a href="/Consortium/Process" shape="rect">Process
+    Document</a>.   In the event of a
+    conflict between this document or the provisions of any charter
+    and the W3C Process, the W3C Process shall take precedence.</p>
+
+    <hr/>
+
+    <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright" shape="rect">Copyright</a>©
+    2015 <a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a>
+    <sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
+    <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>, <a href="http://ev.buaa.edu.cn/" shape="rect">Beihang</a>), All Rights
+    Reserved.</p>
+  </div></body></html>
