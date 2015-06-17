@@ -26,6 +26,14 @@
 </head>
 <body>
 
+<h1 id="warning">NOTE: This document is a <em>Work In Progress Proposal</em> and thus
+  is subject to change at any time. Feedback on this document is welcome
+  and encouraged by using this project's
+  <a href="https://github.com/w3c/charter-html/issues">Github Issues</a> and/or by sending e-mail to the
+  <em>public-html-admin</em> mail list
+  <a href="https://lists.w3.org/Archives/Public/public-html-admin/">(archive)</a>.
+</h1>
+
 <h1>Achieving maintenance and future progress of HTML</h1>
 <p>The goal of this plan is to improve the tone and participation at W3C so that we achieve interoperability around HTML and continue to enhance the specification.</p>
 
@@ -36,6 +44,8 @@
 <li>Interoperability</li>
 <li>Maintenance (aka actual interoperability)</li>
 </ol>
+
+<p>This plan proposes to create one Community Group to incubate ideas, and reshape the Working Groups to achieve interoperability.</p>
 
 <h2 id='incubating'>Incubating new ideas</h2>
 
@@ -49,7 +59,25 @@ The W3C Team and Leadership of the Community and Working Groups should ensure pr
 
 <p>Once a proposal becomes mature enough to justify formal standardization, it becomes the mission and responsibility of a Working Group to ensure proper acceptance, through consensus, wide reviews, <a href='#footnote1'>data-driven</a> analysis, and technical merit. A proposal may become ready for standardization efforts because of implementation experience or broad support.
 
-<p>Supporters of the proposal should perform an &quot;<em><a href='request-to-transition.html'>Request to Transition</a></em>&quot; assessment, outlining use cases, as well as implementation considerations, security, privacy, accessibility, and internationalization impacts. It is the role of the proper Working Group (HTML, CSS, WebApps, etc.) to evaluate such assessment before starting a standardization effort.</p>
+<p>Supporters of the proposal should perform an &quot;<em><a href='request-to-transition.html'>Intent to Migrate</a></em>&quot; assessment, outlining use cases, as well as implementation considerations, security, privacy, accessibility, and internationalization impacts. It is the role of the proper Working Group (HTML, CSS, WebApps, etc.) to evaluate such assessment before starting a standardization effort.</p>
+
+<h3 id="steps">CG Considerations</h3>
+
+<p>Contributions will be need to be tracked to ensure proper commitments. As such, we'll need the following setup:</p>
+
+<ul>
+<li>Map the GitHub identities to the W3C identities</li>
+<li>Facilitate the creation of a GitHub repository for the purpose of fostering a proposal</li>
+<li>Ensure people making comments/pull requests are aware of the IPR commitment they are making, such as appropriate <a href='https://github.com/w3c/web-nfc/blob/gh-pages/CONTRIBUTING.md'>CONTRIBUTING</a> and <a href='https://github.com/w3c/web-nfc/blob/gh-pages/LICENSE.md'>LICENSE</a> disclaimers</li>
+<li>All contributors to a commit or a pull request (PR) should be identified, not just the individual who made the commit or PR. A tool will flag if a pull request should be merged depending on its contributors</li>
+<!--
+@@check with Mike Champion
+<li>Tooling to assist W3C Members who may wish their employees to participate in some but not all the GitHub repos affiliated with a CG</li>
+-->
+<li>Tools to help W3C Members track which affiliated GitHub repos their employees are contributing to</li>
+<li>Encouraging to get broad patent commitments on a spec via a Final Specification Agreement as part of an intent to migrate to a Working Group</li>
+<li>Generate weekly activity reports from the Github repos</li>
+</ul>
 
 <h2 id='efficent'>Efficient data-driven standards work</h2>
 
@@ -112,6 +140,7 @@ See also <a href='https://specs.webplatform.org/docs/'>Web Platform Specs</a>. T
 <h3 id='browsers'>Browser engines meeting</h3>
 
 <p>(see <a href='https://github.com/w3c/charter-html/issues/10'>issue 10</a>)</p>
+<p><strong>Note:</strong> This section is somewhat orthogonal to the proposal and will probably be removed in the future.</p>
 <p>
   To ensure proper focus and prioritization, the W3C Team will ensure proper sychronization of vendor interests. As such, the W3C Team will hold quarterly meetings with those with authority over what gets committed to a consumer browser engine codebase. The scheduling, agenda, and minutes of those meetings will be made publicly available.
 </p>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Web Applications Working Group Charter</title>
+    <link media="screen" type="text/css" href="http://www.w3.org/2005/10/w3cdoc.css"
+      rel="stylesheet" />
+    <link href="http://www.w3.org/Guide/pubrules-style.css" type="text/css" rel="stylesheet" />
+    <link href="http://www.w3.org/2006/02/charter-style.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+    .comment
+    {
+       width: 90%;
+       border: 3px solid red;
+       padding: 6px;
+       clear: both;
+    }
+
+    .helpneeded
+    {
+       color: red;
+    }
+
+    #navbar
+    {
+       font-size: small;
+    }
+
+    .complete
+    {
+       font-weight: bold;
+    }
+
+   </style>
+  </head>
+  <body>
+    <div id="template">
+      <ul id="navbar">
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#coordination">Dependencies and Liaisons</a></li>
+        <li><a href="#participation">Participation</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#decisions">Decision Policy</a></li>
+        <li><a href="#patentpolicy">Patent Policy </a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#about">About this Charter</a></li>
+      </ul>
+      <p><a href="http://www.w3.org/"><img width="72" height="48" src="http://www.w3.org/Icons/w3c_home"
+            alt="W3C" /></a>
+        <a href="http://www.w3.org/Interaction/" class="domainlogo"><img
+            alt="Interaction Domain"
+            src="http://www.w3.org/Icons/interaction" /></a>
+      </p>
+      <h1 id="title">[DRAFT] Web Applications Working Group Charter</h1>
+
+      <p class="mission">The mission of the <a href="@@">Web
+          Applications (WebApps) Working Group</a>, part of the <a href="http://www.w3.org/2006/rwc/">Rich
+          Web Client Activity</a>,  is to continue the development of the HTML language and to provide specifications that enable
+        improved client-side application development on the Web, including
+        specifications both for <em>application programming interfaces (APIs)
+          for client-side development</em> and for <em>markup vocabularies for
+          describing and controlling client-side application behavior</em>.</p>
+          <!-- TOREMOVE
+      <div class="noprint">
+        <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/42538/join">Join
+            the Web Applications Working Group</a>.</p>
+      </div>
+      -->
+      <table class="summary-table">
+        <tbody>
+          <tr id="Duration">
+            <th colspan="1" rowspan="1">End date</th>
+            <td colspan="1" rowspan="1">30 September 2016</td>
+          </tr>
+          <tr>
+            <th colspan="1" rowspan="1">Confidentiality</th>
+            <td colspan="1" rowspan="1">Proceedings are <a href="http://www.w3.org/2005/10/Process-20051014/comm.html#confidentiality-levels">Public</a></td>
+          </tr>
+          <tr>
+            <th colspan="1" rowspan="1">Chairs</th>
+            <td colspan="1" rowspan="1">Art Barstow, Charles McCathie Nevile, L&eacute;onie Watson, Adrian Bateman</td>
+          </tr>
+          <tr>
+            <th colspan="1" rowspan="1">Team Contacts <br />
+              (FTE %: 75)</th>
+            <td colspan="1" rowspan="1">Yves Lafon, Xiaoqian Wu, Robin Berjon</td>
+          </tr>
+          <tr>
+            <th colspan="1" rowspan="1">Usual Meeting Schedule</th>
+            <td colspan="1" rowspan="1">Teleconferences: topic-specific calls
+              may be held up to once per week<br />
+              Face-to-face: we will meet during the W3C's annual Technical
+              Plenary week; other additional F2F meetings may be scheduled (up
+              to 2 per year) <br />
+              IRC: active participants, particularly editors, regularly use the
+              #webapps W3C IRC channel </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="scope">
+        <h2>Scope</h2>
+        <p>The Web Applications Working Group will:</p>
+        <ul>
+          <li>continue the development of the HTML language;</li>
+          <li>ensure that developers can use Web technologies to build client-side applications and are relying on Web engines as application runtime environments;</li>
+          <li>provide generic and consistent interoperability and integration among all target formats, such as HTML, CSS, and SVG.</li>
+          <li>continue to define normative requirements for applications that process HTML resources, including (but not limited to) browsers and other interactive user agents, as well as authoring tools, markup generators, and conformance checkers;</li>
+          <li>promote universal access to Web applications across a wide range of devices and among a diversity of users, by ensuring address issues of accessibility, device independence, internationalization, mobility, privacy, and security.</li>
+        </ul>
+
+        <p>
+           The Web Applications Working Group will rely on modularity as a key part of the development of the HTML language, allowing extension specifications to define new elements, new attributes, new values for attributes that accept defined sets of keywords, and new APIs. Those extension specifications may be achieved within the Web Applications Working Group or other Groups.
+        </p>
+      <div>
+        <h3 id="success">Success Criteria</h3>
+    <p>The Working Group’s work will be considered a success if there are
+    multiple independent complete and interoperable implementations of its deliverables that are widely used.
+    <ul>
+      <li>Production of stable documents addressing the work items
+      listed in the <a href="#deliverables">Deliverables</a> section.
+      <li>Test suites for each deliverable with conformance criteria.
+      <li>Availability of authoring tools and validation tools.
+      <li>User-community and industry adoption of the group deliverables.
+      <li>Availability of multiple, independent, interoperable browser
+        implementations of each deliverable with normative conformance
+        requirements for browser implementations, as demonstrated by an
+        implementation report (summarizing implementation status against
+        the relevant test suite).
+      <li>If participants from fewer than three distinct browser-engine
+        projects are participating in the group, its charter should be
+        re-examined by the W3C.
+    </ul>
+      </div>
+      </div>
+      <div class="deliverables">
+        <h2 id="deliverables">Deliverables</h2>
+        <h3 id="rec-track">Recommendation-Track Deliverables</h3>
+        <p>The working group will deliver at least the following:</p>
+        <dl>
+          <dt id="clipops"><a href="https://w3c.github.io/clipboard-apis/">Clipboard
+              API and events</a></dt>
+          <dd>A specification to expose common clipboard operations such as cut,
+            copy and paste to Web Applications. </dd>
+          <dt id="db">Database and Offline Application APIs</dt>
+          <dd>A set of objects and interfaces for client-side database
+            functionality. For more details, see the WebApps WG <a href="http://www.w3.org/2008/webapps/wiki/Database">Database
+              API page</a>. The following Database APIs are deliverables under
+            this charter:
+            <dl>
+              <dt><a href="https://w3c.github.io/quota-api/">Quota Management API</a></dt>
+              <dd>An API for managing the amount of storage space (short- or
+                long-term) available.</dd>
+              <dt><a href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/">Service Workers</a></dt>
+              <dd>Service Workers are a new feature for the web platform that lets a
+		script persistently cache resources and handle all resource requests
+		for an application -- even when the network isn't available.</dd>
+            </dl>
+          </dd>
+          <dt id="dom">Document Object Model (DOM)</dt>
+          <dd>A set of specifications defining objects and interfaces for
+            interaction with a document's tree model. These deliverables
+            include:
+            <dl>
+              <dt id='domcore'><a href="http://www.w3.org/TR/dom/">DOM</a></dt>
+              <dd>
+                DOM defines a platform-neutral model for events and node trees.
+              </dd>
+              <dt id="ui-events"><a href="https://w3c.github.io/uievents/">UI Events</a></dt>
+              <dd>UI Events are those typically implemented by visual user agents for handling user interaction such as mouse and keyboard input.</dd>
+              <dt><a href="https://dvcs.w3.org/hg/innerhtml/raw-file/tip/index.html">DOM Parsing
+                  and Serialization</a></dt>
+              <dd>A specification describing how to parse markup into a DOM, and
+                serialize for export, an HTML or XML fragment or document. This
+                was initially developed in the WHAT-WG. </dd>
+                <dt><a href="https://w3c.github.io/DOM-Level-3-Events-code/">DOM Level 3 KeyboardEvent code Values</a></dt>
+                <dd>
+                A specification describing contains about the key event that can use used identify the physical key being pressed by the user.
+                </dd>
+                <dt><a href="https://w3c.github.io/DOM-Level-3-Events-key/">DOM Level 3 KeyboardEvent key Values</a></dt>
+                <dd>
+                  A specification describing information about the character generated by the key event.
+                </dd>
+              <dt><a href="https://w3c.github.io/editing/input-events.html">Input Events</a></dt>
+              <dd>This specification defines events for text and related input and provides relavant contextual information for each event.</dd>
+            </dl>
+          </dd>
+          <dt id="file-apis">File interaction APIs</dt>
+          <dd>APIs for interacting with file systems:
+            <dl>
+              <dt id="file-api"><a title="File API" href="https://w3c.github.io/FileAPI/">File
+                  API</a></dt>
+              <dd>An API that enables web applications to select file objects
+                and accessing their data. This replaces the File Upload
+                specification.</dd>
+              <dt id="file-system-2"><a href="http://w3c.github.io/filesystem-api/Overview.html">FileSystem
+                  API</a></dt>
+              <dd>A local sandboxed file system API exposed only to Web Applications.</dd>
+            </dl>
+          </dd>
+          <dt id="gamepad"><a href="https://w3c.github.io/gamepad/gamepad.html">Gamepad</a></dt>
+          <dd>Defines APIs that allow web applications to directly act on gamepad data.</dd>
+          <dt>HTML</dt>
+          <dd>
+            Specifications to define the HTML language, HTML-specific APIs for interacting with in-memory representations of resources that use the HTML language, and defines normative requirements for browsers and other user agents which process HTML resources.
+            <dl>
+              <dt><a href="http://www.w3.org/TR/html/">HTML</a></dt>
+              <dd>This specification defines the core language of the World Wide Web: the Hypertext Markup Language (HTML). The updated HTML specification may be modularized into separate documents. When extensions to the HTML specification are needed, separate <a href='http://www.w3.org/TR/html5/infrastructure.html#extensibility'>extension specifications</a> can be written. </dd>
+              <dt><a href="http://dev.w3.org/html5/html-xhtml-author-guide/">Polyglot Markup: HTML-Compatible XHTML Documents</a></dt>
+              <dd>
+                 This specification defines a stream of bytes that parses into identical document trees when processed either as HTML or when processed as XML.
+              </dd>
+              <dt><a href="http://www.w3.org/TR/2dcontext/">HTML Canvas 2D Context</a></dt>
+              <dd>An API for the 2D Context of the HTML canvas element.</dd>
+              <dt><a href="http://w3c.github.io/aria/html-aam/html-aam.html">HTML Accessibility API Mappings 1.0</a></dt>
+              <dd>This specification defines how user agents map <abbr title="HyperText Markup Language">HTML</abbr>  elements and attributes to platform accessibility application programming interfaces (<abbr title="Application Programming Interfaces">APIs</abbr>).  This work is jointly done with the Protocols and Formats Working Group.</dd>
+              <dt><a href="http://www.w3.org/TR/html-aria/">ARIA in HTML</a></dt>
+              <dd>This specification defines the web developer rules for the use of ARIA attributes on HTML elements. </dd>
+              <dt><a href="http://www.w3.org/TR/html-aria/">Notes on Using ARIA in HTML</a></dt>
+              <dd>This document is a practical guide for developers on how to add       accessibility information to HTML elements using the       Accessible Rich Internet Applications specification (WAI-ARIA). This work is jointly done with the Protocols and Formats Working Group.</dd>
+            </dl>
+          </dd>
+          <dt><a href="https://w3c.github.io/ime-api/">Input
+              Method (IME) API</a></dt>
+          <dd>An API to determine the input method being used, to improve the
+            internationalisation of applications working with keyboard and text
+            entry. </dd>
+          <dt id="manifest"><a href="http://w3c.github.io/manifest/">Manifest for Web applications</a></dt>
+          <dd>Defines a JSON-based manifest, which provides developers with a
+	    centralized place to put metadata about a web application.</dd>
+          <dt id="packaging"><a href="http://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a></dt>
+          <dd>This document describes an approach for creating packages of files for use on the web.</dd>
+          <dt id="pointer-lock"><a href="http://dvcs.w3.org/hg/pointerlock/raw-file/tip/index.html">Pointer Lock</a></dt>
+          <dd>Defines APIs that provide scripted access to raw mouse movement data
+	    while locking the target of mouse events to a single element and removing
+	    the cursor from view.</dd>
+	    <dt id="robust-anchoring">Robust Anchoring API</dt>
+		<dd>Defines APIs for linking to a document selection, even when the document
+		has changed. This may be a joint deliverable with the proposed Web
+		Annotations WG.</dd>
+               <dt><a href="https://w3c.github.io/push-api/index.html">Push API</a></dt>
+               <dd>An API that provides web applications scripted access to server-sent notifications.</dd>
+          <dt id="screen-orientation"><a href="https://w3c.github.io/screen-orientation/">Screen Orientation API</a></dt>
+          <dd>A view orientation and locking API e.g. to enable reading the
+            view's orientation state, locking view orientation, notification of
+            view orientation state changes, etc. </dd>
+          <dt id="selection"><a href="http://w3c.github.io/selection-api/">Selection API</a></dt>
+          <dd>Defines APIs for selection, which allows users and authors to select a
+	    portion of a document or specify a point of interest for copy, paste,
+	    and other editing operations.</dd>
+          <dt id="streams-api"><a href="https://dvcs.w3.org/hg/streams-api/raw-file/tip/Overview.htm">Streams API</a></dt>
+          <dd>An API for representing a stream of data in web applications.</dd>
+          <dt id="url"><a href="https://url.spec.whatwg.org/">URL</a></dt>
+          <dd>This specification defines the syntax, process and error handling
+              for resolving URL, a sequence of characters from the Universal Character
+              Set, along with guidelines and security considerations for the use of
+              URL on the Web. It also defines an API to work with the components of a
+              URL.</dd>
+
+          <dt id="webcomponents">Web Components</dt>
+          <dd>Specifications that define mechanisms for adding custom
+            elements to a document which allows them to have well-defined behaviour
+            and rendering.
+	    <dl>
+	      <dt><a href="http://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></dt>
+	      <dd>Defines methods for enabling the author to define and use new
+		types of DOM elements in a document.</dd>
+	      <dt><a href="http://w3c.github.io/webcomponents/spec/imports/">HTML Imports</a></dt>
+	      <dd>Defines a way to include and reuse HTML documents in another
+		HTML documents.</dd>
+	      <dt><a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html">Shadow DOM</a></dt>
+	      <dd>Describes a method of establishing and maintaining functional
+		boundaries between DOM trees and how these trees interact with
+		each other within a document, thus enabling better functional
+		encapsulation within the DOM.</dd>
+</dl>
+</dd>
+          <dt id="webidl"><a href="http://heycam.github.io/webidl/">Web Interface
+              Definition Language (Web IDL)</a></dt>
+          <dd>Language bindings and types for Web interface descriptions.</dd>
+          <dt id="web-sockets"><a title="Web Sockets API" href="http://dev.w3.org/html5/websockets/">Web
+              Sockets API</a></dt>
+          <dd>An API that enables Web pages to use the Web Sockets protocol for
+            two-way communication with a remote host.</dd>
+          <dt id="web-workers"><a title="Web Workers" href="http://dev.w3.org/html5/workers/">Web
+              Workers</a></dt>
+          <dd>An API that allows Web application authors to spawn background
+            workers running scripts in parallel to their main page, allowing for
+            thread-like operation with message-passing as the coordination
+            mechanism.</dd>
+          <dt id="xhr"><a href="https://dvcs.w3.org/hg/xhr/raw-file/default/xhr-1/Overview.html">XHR Level 1</a></dt>
+          <dd>An API for client-server data transfer, both to specify what is
+            currently implemented and to extend its capabilities.</dd>
+        </dl>
+        <p>Each specification should contain a section detailing any known
+          security implications for implementers, Web authors, and end users.
+          The WebApps WG will actively seek security, privacy,
+          internationalisation and accessibility review on all its
+          specifications.</p>
+        <p>After a specification reaches Recommendation status the working group
+          may begin work on, and deliver an updated version of the specification
+          under this charter. Specifications may be moved to Recommendation and
+          a subsequent version begun in order to facilitate the progress of
+          other work which depends on a stable reference.</p>
+        <p>For a detailed summary of the current list of deliverables, and an
+          up-to-date timeline, see the WebApps WG <a title="PubStatus - WEBAPPS"
+            href="http://www.w3.org/2008/webapps/wiki/PubStatus">Publication
+            Status</a> page.</p>
+
+        <h4 id="maintenance">2.1.1. Specification Maintenance</h4>
+        <p>The working group will maintain errata and new editions, as
+          necessary, for the following Recommendation-status specifications:</p>
+        <ul>
+          <li id="cors">
+	     <a href="http://www.w3.org/TR/cors/">CORS</a></li>
+          <li id="dom-errata">Errata for DOM specifications, as required.</li>
+          <li id="widgets">
+             <a href="http://www.w3.org/TR/widgets/">Packaged Web Apps (Widgets) - Packaging and XML Configuration</a></li>
+          <li id="progress">
+	     <a href="http://www.w3.org/TR/progress-events/">Progress Events</a></li>
+          <li id="view-mode">
+             <a href="http://www.w3.org/TR/view-mode/">view-mode Media Feature</a></li>
+          <li id="webstorage">
+             <a href="http://www.w3.org/TR/webstorage/">Web Storage</a></li>
+          <li id='webmessaging'><a href="http://www.w3.org/TR/webmessaging/">Web
+              Messaging</a></li>
+               <li id='sse'><a href="http://dev.w3.org/html5/eventsource/">Server-sent Events</a></li>
+          <li id="html50"><a href="http://www.w3.org/TR/html5/">HTML 5.0</a></li>
+               <li><a href="http://www.w3.org/TR/html-longdesc/">HTML5 Image Description Extension</a></li>
+          <li id="widgets-apis">
+	     <a href="http://www.w3.org/TR/widgets-apis/">Widget Interface</a></li>
+          <li id="widgets-access">
+	     <a href="http://www.w3.org/TR/widgets-access/">Widgets Access Request Policy</a></li>
+          <li id="widgets-digsig">
+	     <a href="http://www.w3.org/TR/widgets-digsig/">XML Digital Signatures for Widgets</a></li>
+        </ul>
+
+        <h4 id="abandoned-work">2.1.2 Abandoned work</h4>
+        <p>Some deliverables from the previous charter will no longer be worked on
+          as documented in the group's
+	  <a href="http://www.w3.org/2008/webapps/wiki/PubStatus#Specs_NO_Longer_Active">non-active specs</a> wiki.</p>
+
+        <h3 id="other-deliverables">Other Deliverables</h3>
+        <p>Other non-normative documents may be created such as:</p>
+        <div id="ig-other-deliverables">
+          <ul>
+            <li>Test suites for each specification</li>
+            <li>Primers for each specification</li>
+            <li>Requirements document for new specifications</li>
+            <li>Non-normative schemas for language formats</li>
+            <li>Non-normative group notes</li>
+          </ul>
+          <p>A comprehensive test suite for all features of a specification is
+            necessary to ensure the specification's robustness, consistency, and
+            implementability, and to promote interoperability between User
+            Agents. Therefore, each specification must have a companion test
+            suite, which should be completed by the end of the Last Call phase,
+            and must be completed, with an implementation report, before
+            transition from Candidate Recommendation to Proposed Recommendation.
+            Additional tests may be added to the test suite at any stage of the
+            Recommendation track, and the maintenance of a implementation report
+            is encouraged. </p>
+        </div>
+        <h3 id="milestones">Milestones</h3>
+        <p>The group's <a href="https://www.w3.org/2008/webapps/wiki/PubStatus">Specification Status</a>
+	  document provides current data about all of the group's specifications,
+	  including Technical Report publication plans and testing status.
+	  Although group expects to progress all of its specifications during this
+	  charter period, the charter does not include detailed <em>milestone</em>
+	  data for each specification because such data is speculative and easily
+	  becomes out of date. Nevertheless, the following specifications are
+	  considered <em>priorities</em> for the group because some other group
+	  has a dependency on the specification. For each of these specifications,
+	  some milestone predictions are provided, but please see the
+	  <a href="https://www.w3.org/2008/webapps/wiki/PubStatus">Specification Status</a>
+	  document for accurate data.</p>
+	<ul>
+    <li>Web Storage (2nd edition): Recommendation expected in 2015</li>
+    <li>Web Workers: Recommendation expected in 2015</li>
+    <li>Web Sockets: Recommendation expected in 2015</li>
+	  <li>XHR; Recommendation expected in early 2016</li>
+	  <li>DOM Parsing and Serialization; Recommendation expected in early 2016</li>
+	  <li>Web IDL; Recommendation expected in early 2016</li>
+	</ul>
+      </div>
+
+      <div class="dependencies">
+        <h2 id="coordination">Dependencies and Liaisons</h2>
+        <h3>Dependencies</h3>
+        <p>A number of specifications depend on the WebIDL specification, which
+          is therefore a very high priority for the Working Group. </p>
+        <p>The Web Sockets specification has an effective dependency on the
+          protocol defined by the <a href="http://www.ietf.org/dyn/wg/charter/hybi-charter.html">IETF's
+            HyBi Working Group</a>. </p>
+
+	<p>
+	  Given the large number of deliverables and therefore also
+dependencies between this working group and accessibility groups, the
+WebApps team contact(s) will liaise with the team contact for WAI PF
+in order to ensure early identification of specifications with
+potential accessibility aspects, and to ensure coordination as needed
+during their development.
+        </p>
+
+        <p>The specifications of several other groups, such as <a href="http://www.w3.org/Graphics/SVG"> SVG</a>, depend upon
+          particular Web Applications Working Group specifications.
+          Where possible, additional dependencies will be
+          avoided to prevent the disruption of dependent deliverables. </p>
+        <h3 id="liaisons">Liaisons</h3>
+        <p>The Web Applications Working Group expects to maintain contacts with
+          at least the following groups and Activities within W3C (in
+          alphabetical order): </p>
+        <dl>
+          <dt><a href="http://www.w3.org/testing/browser/" id="browser-testing">Browser Testing and Tools
+              Working Group</a></dt>
+          <dd>This group's Web Driver specification is of interest to the
+	    WebApps WG.</dd>
+          <dt><a href="http://www.w3.org/Style/Group/" id="css">Cascading Style
+              Sheets Working Group</a></dt>
+          <dd>To collaborate on the Fullscreen API specification and CSS related
+	    aspects of specifications (such as Shadow DOM).</dd>
+          <dt><a href="http://www.w3.org/2009/dap/" id="dap">Device APIs Working
+              Group</a></dt>
+          <dd>To coordinate regarding APIs for devices services.</dd>
+          <dt><a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a></dt>
+          <dd>This group may provide advice or review to ensure that WebApps WG
+            deliverables interact correctly in the context of the  digital publishing ecosystem.</dd>
+          <dt><a href="http://www.w3.org/WAI/IndieUI/">Independent User Interface
+	      Indie UI) Working Group</a></dt>
+          <dd>This group is interested in interaction events and inferred user intents.
+	    The WebApps WG will request review of specifications and
+	    communicate as necessary with this group.</dd>
+          <dt><a href="http://www.w3.org/International/core/">Internationalization
+              Core Working Group</a></dt>
+          <dd>This group may provide advice or review to ensure that WebApps WG
+            deliverables meet the needs of an international Web. In particular
+            the Working Group will request close review of the IME API.</dd>
+            <dt><a href="https://www.w3.org/Math/">Math Working Group</a></dt>
+            <dd>The HTML markup language includes support for embedding MathML content.</dd>
+          <dt><a href="http://www.w3.org/2012/pointerevents/">Pointer Events
+	      Working Group</a></dt>
+          <dd>This group creates DOM extension specifications and is interested in
+	    WebApps' DOM Level 3 Events and UI Events specifications.</dd>
+          <dt><a href="http://www.w3.org/Privacy/">Privacy Interest Group</a> (PING)</dt>
+          <dd>The WebApps WG will request review of specifications and
+            communicate as necessary with this group. </dd>
+          <dt><a href="http://www.w3.org/WAI/PF/" id="pfwg">Protocols and
+              Formats Working Group</a></dt>
+          <dd>To ensure that WebApps WG deliverables support accessibility
+            requirements. PFWG develops the WAI-ARIA specification, of which the HTML5 specification has included some portions by mutual agreement.</dd>
+          <dt><a href="http://www.w3.org/Graphics/SVG" id="svg">SVG (Scalable
+              Vector Graphics) Working Group</a></dt>
+          <dd>To monitor the development of the SVG specification as it
+            complements the WebApps WG's specifications, and to help ensure SVG
+            requirements for the WebApps WG's deliverables are met. The HTML markup language includes support for embedding SVG content and provides support for graphics API, such as the 2D Context API.</dd>
+          <dt><a href="http://www.w3.org/2012/sysapps/">System Applications
+	      Working Group</a></dt>
+          <dd>This group is interested in several of WebApps'
+	    specifications including the File APIs and Service Workers.</dd>
+          <dt><a href="http://www.w3.org/2001/tag/">Technical Architecture Group</a></dt>
+          <dd>The WebApps WG will ask the Technical Architecture Group to
+            review some set of its specifications and will help, through a
+	    joint task force, the development of the URL specification
+	    and the Packaging on the Web specification.</dd>
+          <dt><a href="http://www.w3.org/WAI/UA/" id="uawg">User Agent
+              Accessibility Guidelines Working Group</a></dt>
+          <dd>To ensure that WebApps WG deliverables support accessibility
+            requirements, particularly with regard to interoperability with
+            assistive technologies, and inclusion in deliverables of guidance
+            for implementing WebApps deliverables in ways that support
+            accessibility requirements.</dd>
+          <dt><a href="http://www.w3.org/Mobile/IG/">Web and Mobile Interest Group</a></dt>
+          <dd>This group may provide advice or review to ensure that WebApps WG
+            deliverables interact correctly in the context of Mobile applications.</dd>
+          <dt><a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a></dt>
+          <dd>This group may provide advice or review to ensure that WebApps WG
+            deliverables interact correctly in the context of the digital publishing ecosystem.</dd>
+          <dt><a href="http://www.w3.org/2011/webappsec/">Web Applications
+              Security Working Group</a></dt>
+          <dd>As well as having a joint deliverable (CORS), this group has many
+            overlapping interests with the WebApps WG.</dd>
+          <dt><a href="http://www.w3.org/2010/webperf/">Web Performance Working
+              Group</a></dt>
+          <dd>This group focuses on performance of the Web platform, including
+            deliverables of the WebApps WG.</dd>
+          <dt><a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications
+	      Working Group</a></dt>
+          <dd>This group creates API specifications and is interested in
+	    WebApps' Streams API.</dd>
+          <dt><a href="http://www.w3.org/Security/wiki/IG">Web Security Interest Group</a></dt>
+          <dd>The WebApps WG will request review of specifications and
+            communicate as necessary with this group.</dd>
+        </dl>
+        <div id="conformance">
+          <p>Furthermore, the Web Applications Working Group expects to follow
+            the following W3C Recommendations, Guidelines and Notes and, if
+            necessary, to liaise with the communities behind the following
+            documents: </p>
+          <ul>
+            <li><a href="http://www.w3.org/TR/webarch/">Architecture of the
+                World Wide Web, Volume I</a></li>
+            <li><a href="http://www.w3.org/International/publications/">Internationalization
+                Technical Reports and Notes</a></li>
+            <li><a href="http://www.w3.org/TR/qaframe-spec/">QA Framework:
+                Specification Guidelines</a></li>
+          </ul>
+      <p>
+  The Working Group will consider proposals for future
+  specifications from Community Groups, encourage open
+  participation from Community Group members, and keep
+  coordination with relevant Community Groups, all within the bounds
+  of the W3C patent policy and available resources.
+      </p>
+        </div>
+        <div>
+          <h3 id="external-groups">External Groups</h3>
+          <p>The following is a tentative list of external bodies the Working
+            Group should collaborate with: </p>
+          <dl>
+            <dt><a href="http://www.ecma-international.org/memento/TC39.htm" id="tc39">ECMA
+                Technical Committee 39 (TC39)</a></dt>
+            <dd>This is the group responsible for ECMAScript standardization,
+              and related ECMAScript features like E4X. As the Web Applications
+              Working Group will be developing ECMAScript APIs, it should
+              collaborate with TC39.</dd>
+            <dt><a title="IETF Home Page" href="http://www.ietf.org/" id="ietf">Internet
+                Engineering Task Force</a></dt>
+            <dd>The IETF is responsible for defining robust and secure protocols
+              for Internet functionality. A close relationship with the IETF
+              HTTP group is crucial to ensuring the good design, deployment, and
+              success of protocol-based APIs such as CORS and Web Sockets. This
+              Working Group will rely upon review and parallel progress of
+              associated specifications, and will keep pace with the IETF's HTTP
+              and <a href="http://www.ietf.org/dyn/wg/charter/hybi-charter.html">HyBi</a>
+              groups' work, conditional upon steady progress. The working group
+              may well also liaise with the IETFs Web Security Working Group,
+              either directly or through its liaison with the W3C's Web
+              Applications Security Working Group. </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="participation">
+        <h2 id="participation">Participation</h2>
+        <p>To be successful, the Web Applications Working Group is expected to
+          have 10 or more active participants for its duration, and to have the
+          participation of industry leaders in fields relevant to the
+          specifications it produces.</p>
+        <p>The Chairs, specification Editors and test Facilitators are expected
+          to contribute one to two days per week towards the Working Group.
+          There is no minimum requirement for other Participants.</p>
+        <p>The Web Applications Working Group welcomes participation, with
+          agreement from each participant to the provisions of the W3C Patent
+          Policy.</p>
+      </div>
+      <div class="communication">
+        <h2 id="communication">Communication</h2>
+        <p>The <a href="http://www.w3.org/2008/webapps/wiki/WorkMode">working
+            mode</a> of the group is described in detail on its wiki. In general
+          the group does not hold teleconferences, and meets face to face at the
+          TP/AC. It may hold more meetings, and certain specifications are
+          developed with regular teleconferences. Note the <a href="#decisions">Decision
+            Policy</a> below with regards to synchronous meetings. </p>
+        <p>
+        The Working Group <strong>conduct their work primarily through github repositories</strong>, for contributions and communications. Discourse may be used for broad discussions with the community. There will be one github repository per document. Similar to open-source software development, peer production is encouraged: changes will be executed through Pull Requests, where each pull request gets preferably reviewed before being merged.
+        Regular activity summaries around the github repositories MUST be provided.</p>
+        <p>The Group may use mailing lists. Subscription
+          to these lists is open to the public, subject to W3C norms of
+          behavior. </p>
+        <p>Up-to-date information about the group (for example, details about
+          deliverables, issues, actions, status, participants) is available from
+          the <a href="http://www.w3.org/2006/Web%20Applications/">Web
+            Applications Working Group home page.</a></p>
+      </div>
+      <div class="decisions">
+        <h2 id="decisions">Decision Policy</h2>
+        <p>As explained in the W3C Process Document (<a href="http://www.w3.org/Consortium/Process/policies#Consensus">section
+            3.3</a>), this group will seek to make decisions when there is
+          consensus and with due process. The expectation is that typically, an
+          editor or other participant makes an initial proposal, which is then
+          refined in discussion with members of the group and other reviewers,
+          and consensus emerges with little formal voting being required.
+          However, if a decision is necessary for timely progress, but consensus
+          is not achieved after careful consideration of the range of views
+          presented, the Chairs should put a question out for voting within the
+          group (allowing for remote asynchronous participation -- using, for
+          example, email and/or web-based survey techniques) and record a
+          decision, along with any objections. The matter should then be
+          considered resolved unless and until new information becomes
+          available.</p>
+        <p>Any resolution taken in a face-to-face meeting or teleconference is
+          to be considered provisional until 10 working days after the
+          publication of the resolution in draft minutes sent to the working
+          groups mailing list. If no objections are raised on the mailing list
+          within that time, the resolution will be considered to have consensus
+          as a resolution of the Working Group. </p>
+        <p>This charter is written in accordance with <a href="http://www.w3.org/Consortium/Process/policies#Votes">Section
+            3.4, Votes</a> of the W3C Process Document and includes no voting
+          procedures beyond what the Process Document requires. </p>
+      </div>
+      <div class="patent">
+        <h2 id="patentpolicy">Patent Policy </h2>
+        <p>This Working Group operates under the <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">W3C
+            Patent Policy</a> (5 February 2004 Version). To promote the widest
+          adoption of Web standards, W3C seeks to issue Recommendations that can
+          be implemented, according to this policy, on a Royalty-Free basis. </p>
+        <p>For more information about disclosure obligations for this group,
+          please see the <a href="http://www.w3.org/2004/01/pp-impl/">W3C
+            Patent Policy Implementation</a>. </p>
+      </div>
+      <div class="licensing">
+        <h2 id="licensing">Licensing</h2>
+        <p>This Working Group will use the <a href='http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document.html'>W3C Software and Document license</a> for all its deliverables.</p>
+      </div>
+      <div class="patent">
+        <h2 id="about">About this Charter</h2>
+        <p>This charter for the Web Applications Working Group has been created
+          according to <a href="http://www.w3.org/Consortium/Process/groups#GAGeneral">section
+            6.2</a> of the <a href="http://www.w3.org/Consortium/Process">Process
+            Document</a>. In the event of a conflict between this document or
+          the provisions of any charter and the W3C Process, the W3C Process
+          shall take precedence. </p>
+      </div>
+
+      <hr />
+      <address> Yves Lafon, Team Contact <br />
+	Xiaoqian Wu, Team Contact <br />
+  Robin Berjon, Team Contact <br />
+        Art Barstow, Chair <br />
+        Leonie Watson, Chair <br />
+        Adrian Bateman, Chair <br />
+        Charles McCathie Nevile, Chair </address>
+      <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
+          rel="Copyright">Copyright</a>©
+        2015 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+        (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+        <a href="http://www.ercim.org/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+        <a href="http://www.keio.ac.jp/">Keio</a>,
+	<a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
