@@ -144,7 +144,7 @@
             copy and paste to Web Applications. </dd>
           <dt id="db">Database and Offline Application APIs</dt>
           <dd>A set of objects and interfaces for client-side database
-            functionality. For more details, see the WebApps WG <a href="http://www.w3.org/2008/webapps/wiki/Database">Database
+            functionality. For more details, see the Web Platform WG <a href="http://www.w3.org/2008/webapps/wiki/Database">Database
               API page</a>. The following Database APIs are deliverables under
             this charter:
             <dl>
@@ -290,16 +290,23 @@
           <dt id="webidl"><a href="http://heycam.github.io/webidl/">Web Interface
               Definition Language (Web IDL)</a></dt>
           <dd>Language bindings and types for Web interface descriptions.</dd>
-          <dt id="web-workers"><a title="Web Workers" href="http://dev.w3.org/html5/workers/">Web
-              Workers</a></dt>
-          <dd>An API that allows Web application authors to spawn background
-            workers running scripts in parallel to their main page, allowing for
-            thread-like operation with message-passing as the coordination
-            mechanism.</dd>
+          <dt>Workers</dt>
+          <dd>
+            <dl>
+            <dt id="web-workers"><a title="Web Workers" href="http://dev.w3.org/html5/workers/">Web
+                Workers</a></dt>
+            <dd>An API that allows Web application authors to spawn background
+              workers running scripts in parallel to their main page, allowing for
+              thread-like operation with message-passing as the coordination
+              mechanism.</dd>
+            <dt><a href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/">Service Workers</a></dt>
+            <dd>Describe a method to enable Web applications to take advantage of persistent background processing</dd>
+            </dl>
+          </dd>
         </dl>
         <p>Each specification should contain a section detailing any known
           security implications for implementers, Web authors, and end users.
-          The WebApps WG will actively seek security, privacy,
+          The Web Platform WG will actively seek security, privacy,
           internationalisation and accessibility review on all its
           specifications.</p>
         <p>After a specification reaches Recommendation status the working group
@@ -314,8 +321,8 @@
           then it will recharter with changes to that new charter limited to
           just the changes in deliverables.</p>
         <p>For a detailed summary of the current list of deliverables, and an
-          up-to-date timeline, see the WebApps WG <a title="PubStatus - WEBAPPS"
-            href="http://www.w3.org/2008/webapps/wiki/PubStatus">Publication
+          up-to-date timeline, see the Web Platform WG <a title="PubStatus - WEBPLATFORM"
+            href="https://w3c.github.com/webplatform-wg/PubStatus.md">Publication
             Status</a> page.</p>
 
         <h4 id="maintenance">2.1.1. Specification Maintenance</h4>
@@ -368,7 +375,7 @@
             is encouraged. </p>
         </div>
         <h3 id="milestones">Milestones</h3>
-        <p>The group's <a href="https://www.w3.org/2008/webapps/wiki/PubStatus">Specification Status</a>
+        <p>The group's <a href="https://w3c.github.com/webplatform-wg/PubStatus.md">Specification Status</a>
 	  document provides current data about all of the group's specifications,
 	  including Technical Report publication plans and testing status.
 	  Although the group expects all of its specifications to progress during this
@@ -378,7 +385,7 @@
 	  considered <em>priorities</em> for the group because some other group
 	  has a dependency on the specification. For each of these specifications,
 	  some milestone predictions are provided, but please see the
-	  <a href="https://www.w3.org/2008/webapps/wiki/PubStatus">Specification Status</a>
+	  <a href="https://w3c.github.com/webplatform-wg/PubStatus.md">Specification Status</a>
 	  document for accurate data.</p>
 	<ul>
     <li>Web Storage (2nd edition): Recommendation expected in 2015</li>
@@ -402,7 +409,7 @@
 	<p>
 	  Given the large number of deliverables and therefore also
 dependencies between this working group and accessibility groups, the
-WebApps team contact(s) will liaise with the team contact for WAI PF
+Web Platform team contact(s) will liaise with the team contact for WAI PF
 in order to ensure early identification of specifications with
 potential accessibility aspects, and to ensure coordination as needed
 during their development.
@@ -420,7 +427,7 @@ during their development.
           <dt><a href="http://www.w3.org/testing/browser/" id="browser-testing">Browser Testing and Tools
               Working Group</a></dt>
           <dd>This group's Web Driver specification is of interest to the
-	    WebApps WG.</dd>
+	    Web Platform WG.</dd>
           <dt><a href="http://www.w3.org/Style/Group/" id="css">Cascading Style
               Sheets Working Group</a></dt>
           <dd>To collaborate on the Fullscreen API specification and CSS related
@@ -429,16 +436,16 @@ during their development.
               Group</a></dt>
           <dd>To coordinate regarding APIs for devices services.</dd>
           <dt><a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a></dt>
-          <dd>This group may provide advice or review to ensure that WebApps WG
+          <dd>This group may provide advice or review to ensure that Web Platform WG
             deliverables interact correctly in the context of the  digital publishing ecosystem.</dd>
           <dt><a href="http://www.w3.org/WAI/IndieUI/">Independent User Interface
 	      Indie UI) Working Group</a></dt>
           <dd>This group is interested in interaction events and inferred user intents.
-	    The WebApps WG will request review of specifications and
+	    The Web Platform WG will request review of specifications and
 	    communicate as necessary with this group.</dd>
           <dt><a href="http://www.w3.org/International/core/">Internationalization
               Core Working Group</a></dt>
-          <dd>This group may provide advice or review to ensure that WebApps WG
+          <dd>This group may provide advice or review to ensure that Web Platform WG
             deliverables meet the needs of an international Web. In particular
             the Working Group will request close review of the IME API.</dd>
             <dt><a href="https://www.w3.org/Math/">Math Working Group</a></dt>
@@ -446,55 +453,55 @@ during their development.
           <dt><a href="http://www.w3.org/2012/pointerevents/">Pointer Events
 	      Working Group</a></dt>
           <dd>This group creates DOM extension specifications and is interested in
-	    WebApps' DOM Level 3 Events and UI Events specifications.</dd>
+	    Web Platform' DOM Level 3 Events and UI Events specifications.</dd>
           <dt><a href="http://www.w3.org/Privacy/">Privacy Interest Group</a> (PING)</dt>
-          <dd>The WebApps WG will request review of specifications and
+          <dd>The Web Platform WG will request review of specifications and
             communicate as necessary with this group. </dd>
           <dt><a href="http://www.w3.org/WAI/PF/" id="pfwg">Protocols and
               Formats Working Group</a></dt>
-          <dd>To ensure that WebApps WG deliverables support accessibility
+          <dd>To ensure that Web Platform WG deliverables support accessibility
             requirements. PFWG develops the WAI-ARIA specification, of which the HTML5 specification has included some portions by mutual agreement.</dd>
           <dt><a href="http://www.w3.org/Graphics/SVG" id="svg">SVG (Scalable
               Vector Graphics) Working Group</a></dt>
           <dd>To monitor the development of the SVG specification as it
-            complements the WebApps WG's specifications, and to help ensure SVG
-            requirements for the WebApps WG's deliverables are met. The HTML markup language includes support for embedding SVG content and provides support for graphics API, such as the 2D Context API.</dd>
+            complements the Web Platform WG's specifications, and to help ensure SVG
+            requirements for the Web Platform WG's deliverables are met. The HTML markup language includes support for embedding SVG content and provides support for graphics API, such as the 2D Context API.</dd>
           <dt><a href="http://www.w3.org/2012/sysapps/">System Applications
 	      Working Group</a></dt>
-          <dd>This group is interested in several of WebApps'
+          <dd>This group is interested in several of Web Platform'
 	    specifications including the File APIs and Service Workers.</dd>
           <dt><a href="http://www.w3.org/2001/tag/">Technical Architecture Group</a></dt>
-          <dd>The WebApps WG will ask the Technical Architecture Group to
+          <dd>The Web Platform WG will ask the Technical Architecture Group to
             review some set of its specifications and will help, through a
 	    joint task force, the development of the URL specification
 	    and the Packaging on the Web specification.</dd>
           <dt><a href="http://www.w3.org/WAI/UA/" id="uawg">User Agent
               Accessibility Guidelines Working Group</a></dt>
-          <dd>To ensure that WebApps WG deliverables support accessibility
+          <dd>To ensure that Web Platform WG deliverables support accessibility
             requirements, particularly with regard to interoperability with
             assistive technologies, and inclusion in deliverables of guidance
-            for implementing WebApps deliverables in ways that support
+            for implementing Web Platform deliverables in ways that support
             accessibility requirements.</dd>
           <dt><a href="http://www.w3.org/Mobile/IG/">Web and Mobile Interest Group</a></dt>
-          <dd>This group may provide advice or review to ensure that WebApps WG
+          <dd>This group may provide advice or review to ensure that Web Platform WG
             deliverables interact correctly in the context of Mobile applications.</dd>
           <dt><a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a></dt>
-          <dd>This group may provide advice or review to ensure that WebApps WG
+          <dd>This group may provide advice or review to ensure that Web Platform WG
             deliverables interact correctly in the context of the digital publishing ecosystem.</dd>
           <dt><a href="http://www.w3.org/2011/webappsec/">Web Applications
               Security Working Group</a></dt>
           <dd>As well as having a joint deliverable (CORS), this group has many
-            overlapping interests with the WebApps WG.</dd>
+            overlapping interests with the Web Platform WG.</dd>
           <dt><a href="http://www.w3.org/2010/webperf/">Web Performance Working
               Group</a></dt>
           <dd>This group focuses on performance of the Web platform, including
-            deliverables of the WebApps WG.</dd>
+            deliverables of the Web Platform WG.</dd>
           <dt><a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications
 	      Working Group</a></dt>
           <dd>This group creates API specifications and is interested in
-	    WebApps' Streams API.</dd>
+	    Web Platform' Streams API.</dd>
           <dt><a href="http://www.w3.org/Security/wiki/IG">Web Security Interest Group</a></dt>
-          <dd>The WebApps WG will request review of specifications and
+          <dd>The Web Platform WG will request review of specifications and
             communicate as necessary with this group.</dd>
         </dl>
         <div id="conformance">
@@ -560,7 +567,7 @@ during their development.
       </div>
       <div class="communication">
         <h2 id="communication">Communication</h2>
-        <p>The <a href="http://www.w3.org/2008/webapps/wiki/WorkMode">working
+        <p>The <a href="https://w3c.github.com/webplatform-wg/WorkMode.md">working
             mode</a> of the group is described in detail on its wiki. In general
           the group does not hold plenary teleconferences, but does meet face to face at the
           TP/AC. It may hold more meetings, and certain specifications are
@@ -577,8 +584,8 @@ during their development.
           behavior. </p>
         <p>Up-to-date information about the group (for example, details about
           deliverables, issues, actions, status, participants) is available from
-          the <a href="http://www.w3.org/2006/Web%20Applications/">Web
-            Applications Working Group home page.</a></p>
+          the <a href="http://www.w3.org/2015/@@@@/">Web
+            Platform Working Group home page.</a></p>
       </div>
       <div class="decisions">
         <h2 id="decisions">Decision Policy</h2>
