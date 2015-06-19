@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
-    <title>Web Applications Working Group Charter</title>
+    <title>Web Platform Working Group Charter</title>
     <link media="screen" type="text/css" href="http://www.w3.org/2005/10/w3cdoc.css"
       rel="stylesheet" />
     <link href="http://www.w3.org/Guide/pubrules-style.css" type="text/css" rel="stylesheet" />
@@ -53,10 +53,10 @@
             alt="Interaction Domain"
             src="http://www.w3.org/Icons/interaction" /></a>
       </p>
-      <h1 id="title">[DRAFT] Web Applications Working Group Charter</h1>
+      <h1 id="title">[DRAFT] Web Platform Working Group Charter</h1>
 
       <p class="mission">The mission of the <a href="@@">Web
-          Applications (WebApps) Working Group</a>, part of the <a href="http://www.w3.org/2006/rwc/">Rich
+          Platform Working Group</a>, part of the <a href="http://www.w3.org/2006/rwc/">Rich
           Web Client Activity</a>,  is to continue the development of the HTML language, providing specifications that enable
         improved client-side application development on the Web, including
          <em>application programming interfaces (APIs)
@@ -65,7 +65,7 @@
           <!-- TOREMOVE
       <div class="noprint">
         <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/42538/join">Join
-            the Web Applications Working Group</a>.</p>
+            the Web Platform Working Group</a>.</p>
       </div>
       -->
       <table class="summary-table">
@@ -101,7 +101,7 @@
       </table>
       <div id="scope">
         <h2>Scope</h2>
-        <p>The Web Applications Working Group will:</p>
+        <p>The Web Platform Working Group will:</p>
         <ul>
           <li>continue the development of the HTML language, and associated APIs;</li>
           <li>ensure that developers can use Web technologies to build client-side applications and are relying on Web engines as application runtime environments;</li>
@@ -111,7 +111,7 @@
         </ul>
 
         <p>
-           The Web Applications Working Group will rely on modularity as a key part of the development of the HTML language, allowing extension specifications to define new elements, new attributes, new values for attributes that accept defined sets of keywords, and new APIs. Those extension specifications may be achieved within the Web Applications Working Group or other Groups.
+           The Web Platform Working Group will rely on modularity as a key part of the development of the HTML language, allowing extension specifications to define new elements, new attributes, new values for attributes that accept defined sets of keywords, and new APIs. Those extension specifications may be achieved within the Web Platform Working Group or other Groups.
         </p>
       <div>
         <h3 id="success">Success Criteria</h3>
@@ -228,6 +228,20 @@
           <dt id="manifest"><a href="http://w3c.github.io/manifest/">Manifest for Web applications</a></dt>
           <dd>Defines a JSON-based manifest, which provides developers with a
 	    centralized place to put metadata about a web application.</dd>
+          <dt id='network'>Network</dt>
+          <dd>
+            Specifications that allow network communications:
+            <dl>
+              <dt id="web-sockets"><a title="Web Sockets API" href="http://dev.w3.org/html5/websockets/">Web
+                  Sockets API</a></dt>
+              <dd>An API that enables Web pages to use the Web Sockets protocol for
+                  two-way communication with a remote host.</dd>
+              <dt id="xhr"><a href="https://dvcs.w3.org/hg/xhr/raw-file/default/xhr-1/Overview.html">XHR Level 1</a></dt>
+              <dd>An API that provides scripted client functionality for transferring data between a client and a server.</dd>
+              <dt id="streams-api"><a href="https://dvcs.w3.org/hg/streams-api/raw-file/tip/Overview.htm">Streams API</a></dt>
+              <dd>An API for representing a stream of data in web applications.</dd>
+            </dl>
+          </dd>
           <dt id="packaging"><a href="http://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a></dt>
           <dd>This document describes an approach for creating packages of files for use on the web.</dd>
           <dt id="pointer-lock"><a href="http://dvcs.w3.org/hg/pointerlock/raw-file/tip/index.html">Pointer Lock</a></dt>
@@ -248,8 +262,6 @@
           <dd>Defines APIs for selection, which allows users and authors to select a
 	    portion of a document or specify a point of interest for copy, paste,
 	    and other editing operations.</dd>
-          <dt id="streams-api"><a href="https://dvcs.w3.org/hg/streams-api/raw-file/tip/Overview.htm">Streams API</a></dt>
-          <dd>An API for representing a stream of data in web applications.</dd>
           <dt id="url"><a href="https://url.spec.whatwg.org/">URL</a></dt>
           <dd>This specification defines the syntax, process and error handling
               for resolving URL, a sequence of characters from the Universal Character
@@ -278,19 +290,12 @@
           <dt id="webidl"><a href="http://heycam.github.io/webidl/">Web Interface
               Definition Language (Web IDL)</a></dt>
           <dd>Language bindings and types for Web interface descriptions.</dd>
-          <dt id="web-sockets"><a title="Web Sockets API" href="http://dev.w3.org/html5/websockets/">Web
-              Sockets API</a></dt>
-          <dd>An API that enables Web pages to use the Web Sockets protocol for
-            two-way communication with a remote host.</dd>
           <dt id="web-workers"><a title="Web Workers" href="http://dev.w3.org/html5/workers/">Web
               Workers</a></dt>
           <dd>An API that allows Web application authors to spawn background
             workers running scripts in parallel to their main page, allowing for
             thread-like operation with message-passing as the coordination
             mechanism.</dd>
-          <dt id="xhr"><a href="https://dvcs.w3.org/hg/xhr/raw-file/default/xhr-1/Overview.html">XHR Level 1</a></dt>
-          <dd>An API for client-server data transfer, both to specify what is
-            currently implemented and to extend its capabilities.</dd>
         </dl>
         <p>Each specification should contain a section detailing any known
           security implications for implementers, Web authors, and end users.
@@ -340,11 +345,6 @@
           <li id="widgets-digsig">
 	     <a href="http://www.w3.org/TR/widgets-digsig/">XML Digital Signatures for Widgets</a></li>
         </ul>
-
-        <h4 id="abandoned-work">2.1.2 Abandoned work</h4>
-        <p>Some deliverables from the previous charter will no longer be worked on
-          as documented in the group's
-	  <a href="http://www.w3.org/2008/webapps/wiki/PubStatus#Specs_NO_Longer_Active">non-active specs</a> wiki.</p>
 
         <h3 id="other-deliverables">Other Deliverables</h3>
         <p>Other non-normative documents may be created such as:</p>
@@ -409,11 +409,11 @@ during their development.
         </p>
 
         <p>The specifications of several other groups, such as <a href="http://www.w3.org/Graphics/SVG"> SVG</a>, depend upon
-          particular Web Applications Working Group specifications.
+          particular Web Platform Working Group specifications.
           Where possible, additional dependencies will be
           avoided to prevent the disruption of dependent deliverables. </p>
         <h3 id="liaisons">Liaisons</h3>
-        <p>The Web Applications Working Group expects to maintain contacts with
+        <p>The Web Platform Working Group expects to maintain contacts with
           at least the following groups and Activities within W3C (in
           alphabetical order): </p>
         <dl>
@@ -498,7 +498,7 @@ during their development.
             communicate as necessary with this group.</dd>
         </dl>
         <div id="conformance">
-          <p>Furthermore, the Web Applications Working Group expects to follow
+          <p>Furthermore, the Web Platform Working Group expects to follow
             the following W3C Recommendations, Guidelines and Notes and, if
             necessary, to liaise with the communities behind the following
             documents: </p>
@@ -547,14 +547,14 @@ during their development.
       </div>
       <div class="participation">
         <h2 id="participation">Participation</h2>
-        <p>To be successful, the Web Applications Working Group is expected to
+        <p>To be successful, the Web Platform Working Group is expected to
           have 10 or more active participants for its duration, and to have the
           participation of industry leaders in fields relevant to the
           specifications it produces.</p>
         <p>The Chairs, specification Editors and test Facilitators are expected
           to contribute one to two days per week towards the Working Group.
           There is no minimum requirement for other Participants.</p>
-        <p>The Web Applications Working Group welcomes participation, with
+        <p>The Web Platform Working Group welcomes participation, with
           agreement from each participant to the provisions of the W3C Patent
           Policy.</p>
       </div>
@@ -622,7 +622,7 @@ during their development.
       </div>
       <div class="patent">
         <h2 id="about">About this Charter</h2>
-        <p>This charter for the Web Applications Working Group has been created
+        <p>This charter for the Web Platform Working Group has been created
           according to <a href="http://www.w3.org/Consortium/Process/groups#GAGeneral">section
             6.2</a> of the <a href="http://www.w3.org/Consortium/Process">Process
             Document</a>. In the event of a conflict between this document or
