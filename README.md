@@ -10,5 +10,5 @@ Group charters
 
 Others
  * http://w3c.github.io/charter-html/html-plan.html
- * http://w3c.github.io/charter-html/request-to-transition.html
+ * [Intent to Migrate](https://wicg.github.io/admin/intent-to-migrate.html)
  * [Incubator CG charter](https://wicg.github.io/admin/charter.html)
