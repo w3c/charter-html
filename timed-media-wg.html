@@ -36,7 +36,7 @@
     </div>
 
     <table class="summary-table">
-      <tr id="Start"><th rowspan="1" colspan="1">Start date</th><td rowspan="1" colspan="1">1 October 2015</td></tr>
+      <tr id="Start"><th rowspan="1" colspan="1">Start date</th><td rowspan="1" colspan="1">@@</td></tr>
       <tr id="Duration"><th rowspan="1" colspan="1">End date</th><td rowspan="1" colspan="1">30 September 2017</td></tr>
       <tr><th rowspan="1" colspan="1">Confidentiality</th><td rowspan="1" colspan="1">Proceedings are <a href="http://www.w3.org/2014/Process-20140801/#confidentiality-levels" shape="rect">public</a></td></tr>
       <tr><th rowspan="1" colspan="1">Initial Chairs</th><td rowspan="1" colspan="1"><span class="toadd">CHAIR INFO</span></td></tr>
@@ -51,7 +51,7 @@
     <div class="goals">
       <h2 id="goals">Goals</h2>
 
-      <p>The Web is increasingly used to share and consume timed media (including video and audio). The Timed Media Working Group will work on specifications for enhancing these experiences through new mark-up and APIs. Several other working groups (such as the Audio Working Group and the Web Real-Time Communications Working Group are building sophisticated capabilities that need a common basic set of "bedrock" APIs. The Timed Media Working Group will coordinate the requirements from these and other groups and produce specifications to address these needs.</p>
+      <p>The Web is increasingly used to share and consume timed media (including video and audio). The Timed Media Working Group will work on specifications for enhancing these experiences through new mark-up and APIs. Several other working groups (such as the Audio Working Group and the Web Real-Time Communications Working Group) are building sophisticated capabilities that need a common basic set of "bedrock" APIs. The Timed Media Working Group will coordinate the requirements from these and other groups and produce specifications to address these needs.</p>
     </div>
 
     <div class="scope">
@@ -96,7 +96,7 @@
         <dt>Captioning support</dt>
         <dd>The group may produce a specification to enhance the timed text and caption support available to HTML5 media elements. At a future date, should the Timed Text Working Group choose to halt work on the WebVTT specification, the Timed Media Working Group may take up this work.</dd>
         <dt>Inband Track Support</dt>
-        <dd>If the Media Resource In-band Tracks Community Group produces a mature specification with implementation support then the Timed Media Working Group may adopt this work onto the Recommendation Track.</dd>
+        <dd>If the Media Resource In-band Tracks Community Group produces a <a href='http://dev.w3.org/html5/html-sourcing-inband-tracks/'>mature specification</a> with implementation support then the Timed Media Working Group may adopt this work onto the Recommendation Track.</dd>
         <dt>Low Level Audio and Video support</dt>
         <dd>The Timed Media Working Group may work on low-level media APIs to support the work of the Audio and Web Real-Time Communications Working Groups.</dd>
         <dt>Media Capture</dt>
@@ -104,7 +104,7 @@
         <dt>Secondary Screen Support</dt>
         <dd>The Timed Media Working Group may coordinate work on secondary screen playback with the Second Screen Presentation Working Group.</dd>
         <dt>Synchronization</dt>
-        <dd>If the <a href="https://www.w3.org/community/webtiming/">Multi-Device Timing Community Group</a> produces a mature specification with implementation support, then the Timed Media Working Group may adopt this work onto the Recommendation Track.</dd>
+        <dd>If the <a href="https://www.w3.org/community/webtiming/">Multi-Device Timing Community Group</a> produces a <a href='http://webtiming.github.io/timingobject/'>mature specification</a> with implementation support, then the Timed Media Working Group may adopt this work onto the Recommendation Track.</dd>
 
       </dl>
 
@@ -126,14 +126,14 @@
           </tr>
           <tr>
             <th rowspan="1" colspan="1">Media Source Extensions (MSE)</th>
-            <td class="WD1" rowspan="1" colspan="1">October 2015</td>
-            <td class="CR" rowspan="1" colspan="1">October 2015</td>
+            <td class="WD1" rowspan="1" colspan="1">-</td>
+            <td class="CR" rowspan="1" colspan="1">-</td>
             <td class="PR" rowspan="1" colspan="1">Q4 2015</td>
             <td class="REC" rowspan="1" colspan="1">Q1 2016</td>
           </tr>
           <tr>
             <th rowspan="1" colspan="1">Encrypted Media Extensions (EME)</th>
-            <td class="WD1" rowspan="1" colspan="1">October 2015</td>
+            <td class="WD1" rowspan="1" colspan="1">-</td>
             <td class="CR" rowspan="1" colspan="1">Q4 2015</td>
             <td class="PR" rowspan="1" colspan="1">Q1 2016</td>
             <td class="REC" rowspan="1" colspan="1">Q2 2016</td>
@@ -154,9 +154,11 @@
       <dt><a href="http://w3c.github.io/charter-html/group-charter.html">Web Platform Working Group</a></dt>
       <dd>This group continues the development of the HTML language, provides specifications that enable improved client-side application development on the Web, including application programming interfaces (APIs) for client-side development and markup vocabularies for describing and controlling client-side application behavior.</dd>
       <dt><a href="http://www.w3.org/2011/audio/">Audio Working Group</a></dt>
-      <dd>This group creates specifications for media online captioning including Timed Text Markup Language (TTML) and WebVTT (Web Video Text Tracks).</dd>
-      <dt><a href="http://www.w3.org/AudioVideo/TT/">Timed Text Working Group</a></dt>
       <dd>This group creates API specifications for audio processing and is interested in low level audio device APIs.</dd>
+      <dt><a href="http://www.w3.org/2009/dap/" id="dap">Device APIs Working Group</a></dt>
+      <dd>To coordinate regarding APIs for devices services.</dd>
+      <dt><a href="http://www.w3.org/AudioVideo/TT/">Timed Text Working Group</a></dt>
+      <dd>This group creates specifications for media online captioning including Timed Text Markup Language (TTML) and WebVTT (Web Video Text Tracks).</dd>
       <dt><a href="https://www.w3.org/community/inbandtracks/">Media Resource In-band Tracks Community Group</a></dt>
       <dd>This group is developing a specification for exposing in-band tracks to HTML5 media elements.</dd>
       <dt><a href="https://www.w3.org/community/webtiming/">Multi-Device Timing Community Group</a></dt>
@@ -173,6 +175,9 @@
       <dd>This group may provide advice or review to ensure that Timed Media WG deliverables meet the needs of an international Web.</dd>
       <dt><a href="http://www.w3.org/Privacy/" shape="rect">Privacy Interest Group</a></dt>
       <dd>The Timed Media WG will request review of specifications and communicate as necessary with this group.</dd>
+          <dt><a href="http://www.w3.org/2011/webappsec/">Web Applications
+              Security Working Group</a></dt>
+          <dd>To ensure proper security for applications on the Web.</dd>
     </div>
 
     <div class="participation">
@@ -180,7 +185,7 @@
 
       <p>To be successful, the Timed Media Working Group is expected to have 10 or more active participants for its duration, and to have the participation of industry leaders in fields relevant to the specifications it produces.</p>
 
-      <p>The Chairs and specification Editors are expected to contribute one half-day per week towards the Working Group. There is no minimum requirement for other Participants. This Working Group will also allocate the necessary resources for building Test Suites for each specification.</p>
+      <p>The Chairs and specification Editors are expected to contribute one day per week towards the Working Group. There is no minimum requirement for other Participants. This Working Group will also allocate the necessary resources for building Test Suites for each specification.</p>
 
       <p>The group also welcomes non-Members to contribute technical submissions for consideration, with the agreement from each participant to Royalty-Free licensing of those submissions under the W3C Patent Policy.</p>
     </div>
@@ -216,14 +221,13 @@
       Policy
       </h2>
 
-        <p>This Working Group operates under the <a href="/2014/Process-20140801/" shape="rect">W3C
-        Patent Policy</a> (1 August 2014 Version). To promote the
-        widest adoption of Web standards, W3C seeks to issue
-        Recommendations that can be implemented, according to this
-        policy, on a Royalty-Free basis.</p>
-        <p>For more information about disclosure obligations for
-        this group, please see the <a href="/2004/01/pp-impl/" shape="rect">W3C
-        Patent Policy Implementation</a>.</p>
+        <p>This Working Group operates under the <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">W3C
+            Patent Policy</a> (5 February 2004 Version). To promote the widest
+          adoption of Web standards, W3C seeks to issue Recommendations that can
+          be implemented, according to this policy, on a Royalty-Free basis. </p>
+        <p>For more information about disclosure obligations for this group,
+          please see the <a href="http://www.w3.org/2004/01/pp-impl/">W3C
+            Patent Policy Implementation</a>. </p>
     </div>
 
       <div class="licensing">
@@ -245,6 +249,6 @@
     <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright" shape="rect">Copyright</a>©
     2015 <a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a>
     <sup>®</sup> (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
-    <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>, <a href="http://ev.buaa.edu.cn/" shape="rect">Beihang</a>), All Rights
+    <a href="http://www.ercim.eu/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>, <a href="http://ev.buaa.edu.cn/" shape="rect">Beihang</a>), All Rights
     Reserved.</p>
   </div></body></html>
