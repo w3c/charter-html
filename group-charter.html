@@ -168,8 +168,6 @@
               <dd>A new feature for the Web Platform that lets a
 		script persistently cache resources and handle all resource requests
 		for an application -- even when the network isn't available.</dd>
-              <dt><a href="https://slightlyoff.github.io/BackgroundSync/spec/">Web Background Synchronization</a></dt>
-              <dd>A specification describing a method that enables Web applications to synchronize data when next online.</dd>
               <dt><a href="http://w3c.github.io/webstorage/">Web Storage (2nd Edition)</a></dt>
               <dd>An API for persistent data storage of key-value pair data in Web clients.</dd>
             </dl>
@@ -203,34 +201,15 @@
                 handling user interaction such as mouse and keyboard input.</dd>
             </dl>
           </dd>
-          <dt id='Editing'>Editing APIs</dt>
-          <dd>
-            <dl>
-              <dt><a href="https://w3c.github.io/editing/input-events.html">Input Events</a></dt>
-              <dd>A specification defining events for text and related input, and provides relevant contextual information for each event.</dd>
-              <dt><a href='https://w3c.github.io/editing/contentEditable.html'>contentEditable</a></dt>
-              <dd>A specification defining new values for the <code>contentEditable</code> attribute.</dd>
-              <dt><a href="https://w3c.github.io/editing/execCommand.html">execCommand</a></dt>
-              <dd>This document defines the behavior of the editing commands that can be executed with execCommand.</dd>
           <dt id="selection"><a href="http://w3c.github.io/selection-api/">Selection API</a></dt>
           <dd>APIs for selection, which allows users and authors to select a
       portion of a document or specify a point of interest for copy, paste,
       and other editing operations.</dd>
-            </dl>
-          </dd>
-          <dt id="file-apis">File interaction APIs</dt>
-          <dd>APIs for interacting with file systems:
-            <dl>
-              <dt id="file-api"><a title="File API" href="https://w3c.github.io/FileAPI/">File
+          <dt id="file-api"><a title="File API" href="https://w3c.github.io/FileAPI/">File
                   API</a></dt>
-              <dd>An API that enables Web applications to select file objects
-                and access their data. This replaces the File Upload
-                specification.</dd>
-              <dt id="file-system-2"><a href="http://w3c.github.io/filesystem-api/">FileSystem
-                  API</a></dt>
-              <dd>A local sandboxed file system API exposed only to Web Applications.</dd>
-            </dl>
-          </dd>
+          <dd>An API that enables Web applications to select file objects
+            and access their data. This replaces the File Upload
+            specification.</dd>
           <dt id="gamepad"><a href="https://w3c.github.io/gamepad/gamepad.html">Gamepad</a></dt>
           <dd>APIs that allow Web applications to directly act on gamepad data.</dd>
           <dt><a href='http://www.w3.org/TR/html/'>HTML</a></dt>
@@ -239,17 +218,12 @@
             <dl>
        </dt>
               <dd>A specification defining the core language of the World Wide Web: the Hypertext Markup Language (HTML). The updated HTML specification is expected to be <a href='http://darobin.github.io/breakup/specs/'>modularized into separate documents</a>. When extensions to the HTML specification are needed, separate <a href='http://www.w3.org/TR/html5/introduction.html#extensibility'>extension specifications</a> can be written. Note that the maintenance of the HTMLMediaElement related sections of HTML 5.0 (e.g. sections 4.7.6 to 4.7.10) is expected to happen within the <a href='#timedmedia'>Timed Media Working Group</a>.</dd>
-              <dt><a href="http://www.w3.org/TR/2dcontext/">HTML Canvas 2D Context</a></dt>
-              <dd>An API for the 2D Context of the HTML canvas element.</dd>
               <dt><a href="http://w3c.github.io/aria/html-aam/html-aam.html">HTML Accessibility API Mappings 1.0</a></dt>
               <dd>A specification defining how user agents map HTML elements and attributes to platform APIs.  This work is jointly done with the <a href="http://www.w3.org/2015/04/draft-aria-charter">Accessible Rich Internet Applications Working Group</a>.</dd>
               <dt><a href="http://www.w3.org/TR/html-aria/">ARIA in HTML</a></dt>
               <dd>A specification defining the web developer rules for the use of ARIA attributes on HTML elements. </dd>
             </dl>
           </dd>
-          <dt><a href="https://w3c.github.io/ime-api/">Input
-              Method (IME) API</a></dt>
-          <dd>The Group MAY define an API that provides access to a (native) input method editor.</dd>
           <dt id="manifest"><a href="http://w3c.github.io/manifest/">Manifest for Web applications</a></dt>
           <dd>A JSON-based manifest, which provides developers with a
 	    centralized place to put metadata about a web application.</dd>
@@ -274,18 +248,12 @@
               <dd>An API for representing a stream of data in web applications.</dd>
             </dl>
           </dd>
-          <dt id="packaging"><a href="http://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a></dt>
-          <dd>Defines an approach for creating packages of files for use on the web.</dd>
           <dt id="pointer-lock"><a href="https://w3c.github.io/pointerlock/">Pointer Lock</a></dt>
           <dd>Defines APIs that provide scripted access to raw mouse movement data
 	    while locking the target of mouse events to a single element and removing
 	    the cursor from view.</dd>
       <dt id='push'><a href='https://w3c.github.io/push-api/'>Push API</a></dt>
       <dd>An API that provides web applications scripted access to server-sent notifications.</dd>
-	    <dt id="robust-anchoring">Robust Anchoring API</dt>
-		<dd>APIs for linking to a document selection, even when the document
-		has changed. This is a joint deliverable with the Web
-		Annotation WG.</dd>
           <dt id="screen-orientation"><a href="https://w3c.github.io/screen-orientation/">Screen Orientation API</a></dt>
           <dd>A view orientation and locking API, e.g. to enable reading the
             view's orientation state, locking view orientation, notification of
@@ -323,6 +291,35 @@
             mechanism.</dd>
           </dd>
         </dl>
+        <p>The following deliverables may be picked up once they have gone through an incubation phase:</p>
+        <dl>
+          <dt id='Editing'>Editing APIs</dt>
+          <dd>
+            <dl>
+              <dt><a href="https://w3c.github.io/editing/input-events.html">Input Events</a></dt>
+              <dd>A specification defining events for text and related input, and provides relevant contextual information for each event.</dd>
+              <dt><a href='https://w3c.github.io/editing/contentEditable.html'>contentEditable</a></dt>
+              <dd>A specification defining new values for the <code>contentEditable</code> attribute.</dd>
+              <dt><a href="https://w3c.github.io/editing/execCommand.html">execCommand</a></dt>
+              <dd>This document defines the behavior of the editing commands that can be executed with execCommand.</dd>
+            </dl>
+            </dd>
+          <dt><a href="https://w3c.github.io/ime-api/">Input
+              Method (IME) API</a></dt>
+          <dd>The Group MAY define an API that provides access to a (native) input method editor.</dd>
+          <dt id="file-system-2"><a href="http://w3c.github.io/filesystem-api/">FileSystem
+            API</a></dt>
+          <dd>A local sandboxed file system API exposed only to Web Applications.</dd>
+          <dt id="packaging"><a href="http://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a></dt>
+          <dd>Defines an approach for creating packages of files for use on the web.</dd>
+          <dt id="robust-anchoring">Robust Anchoring API</dt>
+          <dd>APIs for linking to a document selection, even when the document
+            has changed. This is a joint deliverable with the Web
+            Annotation WG.</dd>
+          <dt><a href="https://slightlyoff.github.io/BackgroundSync/spec/">Web Background Synchronization</a></dt>
+          <dd>A specification describing a method that enables Web applications to synchronize data when next online.</dd>
+        </dl>
+
         <p>Each specification should contain a section detailing any known
           security implications for implementers, Web authors, and end users.
           The Web Platform WG will actively seek security, privacy,
@@ -354,6 +351,7 @@
           <li id="html50"><a href="http://www.w3.org/TR/html5/">HTML 5.0</a></li>
           <li><a href="http://www.w3.org/TR/html-longdesc/">HTML5 Image Description Extension</a></li>
           <li id="idb"><a href="http://www.w3.org/TR/IndexedDB/">Indexed Database API</a></li>
+          <li><a href="http://www.w3.org/TR/2dcontext/">HTML Canvas 2D Context</a></li>
           <li id="widgets">
              <a href="http://www.w3.org/TR/widgets/">Packaged Web Apps (Widgets) - Packaging and XML Configuration</a></li>
           <li id="progress">
@@ -511,6 +509,10 @@ during their development.
               Group</a></dt>
           <dd>This group focuses on performance of the Web Platform, including
             deliverables of the Web Platform WG.</dd>
+          <dt><a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></dt>
+          <dd>
+            This group provides a lightweight venue for proposing, incubating and discussing new web platform features.
+          </dd>
           <dt><a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications
 	      Working Group</a></dt>
           <dd>This group creates API specifications for Real-Time Communications in Web browsers.</dd>
