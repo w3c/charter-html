@@ -16,6 +16,9 @@
        clear: both;
     }
 
+    .issue {border: 3px solid red; padding: 6px}
+    .issue::before {content: "@@ISSUE: "}
+
     .helpneeded
     {
        color: red;
@@ -53,23 +56,25 @@
             alt="Interaction Domain"
             src="http://www.w3.org/Icons/interaction" /></a>
       </p>
-      <h1 id="title">[PROPOSED] Web Platform Working Group Charter 2016-7</h1>
+      <h1 id="title">[PROPOSED] Web Platform Working Group Charter 2016-8</h1>
 
-      <p class="mission">The mission of the <a href="http://www.w3.org/WebPlatform/WG/">Web
-          Platform Working Group</a> is to continue the development of the <abbr title="HyperText Markup Language">HTML</abbr> language, providing specifications that enable
-        improved client-side application development on the Web, including
-         application programming interfaces (APIs)
-          for client-side development and markup vocabularies for
-          describing and controlling client-side application behavior.</p>
-          <!-- TOREMOVE
+      <p class="mission">The mission of the
+        <a href="http://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a> is to continue the development of the
+        <abbr title="HyperText Markup Language">HTML</abbr> language and provide specifications that enable improved client-side
+        application development on the Web, including application programming interfaces (APIs) for client-side development
+        and markup vocabularies for describing and controlling client-side application behavior.</p>
+
+          <!-- UNCOMMENT IF CHARTER IS ADOPTED
+
       <section class="noprint">
-        <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/42538/join">Join
-            the Web Platform Working Group</a>.</p>
+        <p class="join"><a href="http://www.w3.org/2004/01/pp-impl/42538/join">Join the Web Platform Working Group</a>.</p>
       </section>
+
       -->
+
       <table class="summary-table">
         <tbody>
-          <tr id="Start"><th rowspan="1" colspan="1">Start date</th><td rowspan="1" colspan="1">@@</td></tr>
+          <tr id="Start"><th rowspan="1" colspan="1">Start date</th><td rowspan="1" colspan="1">1 October 2016</td></tr>
           <tr id="Duration">
             <th>End date</th>
             <td>30 March 2018</td>
@@ -80,21 +85,21 @@
           </tr>
           <tr>
             <th>Chairs</th>
-            <td>Adrian Bateman, Charles McCathie Nevile, L&eacute;onie Watson</td>
+            <td>Adrian Bateman, Charles McCathie Nevile, Léonie Watson</td>
           </tr>
           <tr>
             <th>Team Contacts <br />
-              (FTE %: 1.55)</th>
-            <td>Yves Lafon, Xiaoqian Wu, PLH</td>
+              (FTE %: @@)</th>
+            <td>Yves Lafon, Xiaoqian Wu, Philippe Le Hégaret</td>
           </tr>
           <tr>
             <th>Usual Meeting Schedule</th>
-            <td>Teleconferences: topic-specific calls
-              may be held up to once per week<br />
+            <td>Teleconferences: There are generally not regular teleconferences. <br>
+              Topic-specific calls <em>may</em> be held up to once per week if needed. <br>
               Face-to-face: we will meet during the W3C's annual Technical
-              Plenary week; other F2F meetings may be scheduled (up to 2 per year for the full
-              group, and/or additional meetings of subgroups working on specific
-              topics.)<br />
+              Plenary week; up to 2 other F2F meetings may be scheduled for the full
+              group; Up to 4 meetings per year may be scheduled for subgroups working on specific
+              topics.<br />
               IRC: active participants, particularly editors, regularly use the
               group's IRC channel(s)</td>
           </tr>
@@ -102,11 +107,16 @@
       </table>
       <section id="background">
         <h2>Background</h2>
-        <p>This Working Group was the result of merging the Web Applications Working Group and the HTML Working Group, with some deliverables moved to other groups.</p>
-        <p>The work boundaries between the two Working Groups narrowed over the years, given that it is difficult to introduce new HTML elements and attributes without looking at their implications at the API level.</p>
-        <p>The initial experiment in merging the group for 12 months suggests that it is a reasonable path to continue. This charter therefore provides an 18 month extension, and removes some deliverables considered unlikely to progress within that period.</p>
-
+        <p>The Web Platform Working Group was the result of merging the Web Applications Working Group and the 
+          HTML Working Group, with some deliverables moved to other groups. The work boundaries between the two
+          Working Groups had narrowed over the years, given that it is difficult to introduce new
+          HTML elements and attributes without looking at their implications at the API level.</p>
+        <p>The initial experiment in merging the group for 12 months suggests that it is a reasonable path to continue.
+          This charter therefore provides an 18 month extension, removes some deliverables considered unlikely
+          to progress within that period, and includes others but with a specific requirement that there is a
+          prospect of success before work will continue within the Working Group.</p>
       </section>
+
       <section id="scope">
         <h2>Scope</h2>
         <p>The group will:</p>
@@ -115,31 +125,24 @@
           <li>Ensure that developers can use Web technologies to build client-side applications that rely on Web engines as application runtime environments.</li>
           <li>Provide generic and consistent interoperability and integration among all target formats, such as HTML, CSS, and SVG.</li>
           <li>Continue to define normative requirements for applications that process HTML resources, including browsers and other interactive user agents, authoring tools, content management tools, and conformance checkers.</li>
-          <li>Ensure universal access to Web applications across a wide range of devices and among a diversity of users, addressing issues of accessibility, device independence, and internationalization.</li>
-          <li>Ensure proper privacy and security reviews of its deliverables.</li>
+          <li>Ensure Web applications can work across a wide range of devices and among a broad diversity of users, in particular addressing issues of accessibility, device independence, internationalization, privacy, and security.</li>
         </ul>
 
         <p>The Web Platform Working Group should develop modular specifications to the greatest extent possible for the development of the HTML language, allowing extension specifications to define new elements, new attributes, new values for attributes that accept defined sets of keywords, and new APIs.</p>
 
       <section>
         <h3 id="success">Success Criteria</h3>
-    <p>The group will be considered successful if its deliverables are widely used. In particular:
+    <p>The group will be considered successful if it produces</p>
     <ul>
-      <li>Production of stable documents addressing the work items
-      listed in the <a href="#milestones">Milestones</a> section.</li>
-      <li>A test suite for each deliverable with conformance criteria that provides evidence to support the position that there is good (though perhaps not perfect) interoperability.</li>
-      <li>Availability of authoring tools and validation tools.</li>
-      <li>User-community and industry adoption of the group deliverables.</li>
-      <li>Availability of multiple, independent, interoperable browser
-        implementations of each deliverable. Remaining differences in implementations should have little impact on usage on the Web.</li>
-      <li>Specifications include normative conformance
-        requirements for browser implementations.</li>
-      <li>Implementation reports that summarize the implementation status against
-        the relevant test suite.</li>
+      <li>Stable versions of specifications addressing the work items listed in the
+        <a href="#milestones">Milestones</a> section, with normative conformance requirements for implementation</li>
+      <li>A test suite for each deliverable, sufficiently broad to demonstrate interoperability.</li>
+      <li>Implementation reports for deliverables showing adoption.</li>
     </ul>
-   <p>If participants from fewer than three distinct browser-engine
-      projects are participating in the group, its charter should be
-      re-examined by the W3C.</p>
+    <p>Resulting in the ready availability of multiple, independent, interoperable implementations of each deliverable,
+      including in browsers, authoring and validation tools, and usage on the Web.</p>
+    <p>If participants from fewer than three distinct browser-engine projects are participating in the group,
+      its charter should be re-examined by the W3C.</p>
       </section>
       </section>
       <section class="deliverables">
@@ -147,29 +150,15 @@
         <h3 id="rec-track">Recommendation-Track Deliverables</h3>
         <p>The working group will work on the following W3C specifications:</p>
         <dl>
-          <dt id="clipops"><a href="https://w3c.github.io/clipboard-apis/">Clipboard
-              API and events</a></dt>
-          <dd>A specification to expose common clipboard operations such as cut,
-            copy and paste to Web Applications. </dd>
           <dt id="db"><a href="http://www.w3.org/2008/webapps/wiki/Database">Database and Offline Application APIs</a></dt>
-          <dd>A set of objects and interfaces for client-side database
-            functionality. For more details, see the Web Platform WG <a href="http://www.w3.org/2008/webapps/wiki/Database">Database
-              API page</a>. The following Database APIs are deliverables under
-            this charter:
-            <dl>
-              <dt><a href="http://w3c.github.io/IndexedDB/">Indexed Database API (2nd Edition)</a></dt>
-              <dd>An API for a database of records holding simple values and hierarchical objects</dd>
-<del title="incubate">
-              <dt><a href="https://w3c.github.io/quota-api/">Quota Management API</a></dt>
-              <dd>An API for managing the amount of storage space (short- or
-                long-term) available.</dd>
-</del>
-<del title="maintain Rec as required">
-              <dt><a href="http://w3c.github.io/webstorage/">Web Storage (2nd Edition)</a></dt>
-              <dd>An API for persistent data storage of key-value pair data in Web clients.</dd>
-</del>
-            </dl>
-          </dd>
+            <dd>A set of objects and interfaces for client-side database functionality. For more details, see the Web Platform WG
+              <a href="http://www.w3.org/2008/webapps/wiki/Database">Database API page</a>. The following Database APIs
+              are deliverables under this charter:
+              <dl>
+                <dt><a href="http://w3c.github.io/IndexedDB/">Indexed Database API (2nd Edition)</a></dt>
+                  <dd>An API for a database of records holding simple values and hierarchical objects</dd>
+              </dl>
+            </dd>
 
           <dt id="dom">Document Object Model (DOM)</dt>
             <dd>A set of specifications defining objects and interfaces for
@@ -178,213 +167,165 @@
             <dl>
               <dt id='domcore'>An update for <a href="http://www.w3.org/TR/dom/">DOM4</a></dt>
                 <dd>DOM defines a platform-neutral model for events and node trees.</dd>
-
               <dt id="dom-l3-code"><a href="https://w3c.github.io/DOM-Level-3-Events-code/">DOM Level 3 KeyboardEvent code Values</a></dt>
-              <dd>A specification describing information that can use used identify the physical key
-                being pressed by the user.</dd>
+              <dd>Identifying the physical key being pressed by the user.</dd>
 
               <dt id="dom-l3-key"><a href="https://w3c.github.io/DOM-Level-3-Events-key/">DOM Level 3 KeyboardEvent key Values</a></dt>
-                <dd>A specification describing information about the character generated by the key event.</dd>
+                <dd>Information about the character generated by key events.</dd>
 
               <dt id="innerhtml"><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></dt>
-                <dd>A specification describing how to parse markup into a DOM, and
-                serialize for export, an HTML or XML fragment or document. This
-                was initially developed in the WHAT-WG. </dd>
+                <dd>Parsing markup into a DOM, and serialize for export, an HTML or XML fragment or document.</dd>
 
               <dt id="high-level-user-events">High Level User Events</dt>
                 <dd>A specification to enable authors to support user interaction in Web applications easily
                 without requiring specific hardware, platform, or input methodologies to be in use.</dd>
 
               <dt id="ui-events"><a href="https://w3c.github.io/uievents/">UI Events</a></dt>
-                <dd>A specification defining UI Events, those typically implemented by visual user agents for
-                handling user interaction such as mouse and keyboard input.</dd>
+                <dd>Events typically implemented by interactive user agents for user interaction such as
+                  mouse and keyboard input.</dd>
             </dl>
           </dd>
 
           <dt id='Editing'>Editing APIs</dt>
-          <dd>
+            <dd>
             <dl>
-　　　          <dt id="selection"><a href="http://w3c.github.io/selection-api/">Selection API</a></dt>
-     　　　       <dd>APIs for selection, which allows users and authors to select a
-     　　　　　　　 portion of a document or specify a point of interest for copy, paste,
-   　　　　　　　   and other editing operations.</dd>
+              <dt id="clipops"><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></dt>
+                <dd>Expose common clipboard operations such as cut, copy and paste to Web Applications.</dd>
+              <dt id="selection"><a href="http://w3c.github.io/selection-api/">Selection API</a></dt>
+                <dd>APIs for selection, which allows users and authors to select a portion of a document or specify a
+                  point of interest for copy, paste, and other editing operations.</dd>
               <dt><a href="https://w3c.github.io/editing/input-events.html">Input Events</a></dt>
-              <dd>A specification defining events for text and related input, and provides relevant contextual information for each event.</dd>
+                <dd>A specification defining events for text and related input, and provides relevant contextual information
+                  for each event.</dd>
               <dt><a href='https://w3c.github.io/editing/contentEditable.html'>contentEditable</a></dt>
               <dd>A specification defining new values for the <code>contentEditable</code> attribute.</dd>
               <dt><a href="https://w3c.github.io/editing/execCommand.html">execCommand</a></dt>
-              <dd>This document defines the behavior of the editing commands that can be executed with execCommand.</dd>
+              <dd>Defines the behavior of the editing commands that can be executed with <code>execCommand</code>.</dd>
             </dl>
             </dd>
 
-          <dt id="file-api"><a title="File API" href="https://w3c.github.io/FileAPI/">File
-                  API</a></dt>
-            <dd>An API that enables Web applications to select file objects
-            and access their data. This replaces the File Upload
-            specification.</dd>
+          <dt id="file-api"><a title="File API" href="https://w3c.github.io/FileAPI/">File API</a></dt>
+            <dd>An API that enables Web applications to select file objects and access their data. This replaces the
+              File Upload specification.</dd>
+
           <dt id="gamepad"><a href="https://w3c.github.io/gamepad/gamepad.html">Gamepad</a></dt>
             <dd>APIs that allow Web applications to directly act on gamepad data.</dd>
 
           <dt><a href='http://www.w3.org/TR/html/'>HTML</a></dt>
-            <dd>Specifications to define the HTML language, HTML-specific APIs for interacting with in-memory representations of resources that use the HTML language, and to define normative requirements for browsers and other user agents which process HTML resources.
-            <dl>
-              <dt><a href="http://www.w3.org/TR/html/">HTML</a></dt>
-              <dd>A specification defining the core language of the World Wide Web: the Hypertext Markup Language (HTML). The updated HTML specification should be  progressively modularized into separate documents, or <a href='http://www.w3.org/TR/html5/introduction.html#extensibility'>extension specifications</a>. Note that the maintenance of the HTMLMediaElement related sections of HTML 5.0 (e.g. sections 4.7.6 to 4.7.10) is expected to happen within the <a href='#timedmedia'>proposed Timed Media Working Group</a>.</dd>
-<del title="move to SVG?">
+            <dd>Specifications to define the HTML language, HTML-specific APIs for interacting with in-memory representations
+              of resources that use the HTML language, and to define normative requirements for browsers and other user agents
+              which process HTML resources.
+              <dl>
+                <dt><a href="http://www.w3.org/TR/html/">HTML</a></dt>
+                  <dd>The core language of the World Wide Web: the Hypertext Markup Language (HTML).
+                    The HTML specification should be progressively modularized into separate documents or
+                    <a href='http://www.w3.org/TR/html5/introduction.html#extensibility'>extension specifications</a>.
+                    Note that many other Working Groups define extensions to HTML. These should be referenced from the
+                    core specification</dd>
+
               <dt><a href="http://www.w3.org/TR/2dcontext/">HTML Canvas 2D Context</a></dt>
-              <dd>An API for the 2D Context of the HTML canvas element.</dd>
-</del>
-<del title="move to ARIA?">
+                <dd>An API for the 2D Context of the HTML canvas element.</dd>
+                <dd class="issue">Should this move to the SVG Working Group?</dd>
+
               <dt><a href="http://w3c.github.io/aria/html-aam/html-aam.html">HTML Accessibility API Mappings 1.0</a></dt>
-              <dd>A specification defining how user agents map HTML elements and attributes to platform APIs.  This work is jointly done with the <a href="http://www.w3.org/2015/04/draft-aria-charter">Accessible Rich Internet Applications Working Group</a>.</dd>
-</del>
+                <dd>How to map HTML elements and attributes to platform accessibility APIs. This is joint work with the
+                  <a href="http://www.w3.org/2015/04/draft-aria-charter">ARIA Working Group</a>.</dd>
+                <dd class="issue">Should this move to the ARIA Working Group?</dd>
+
               <dt><a href="http://www.w3.org/TR/html-aria/">ARIA in HTML</a></dt>
-              <dd>A specification defining the web developer rules for the use of ARIA attributes on HTML elements. </dd>
+                <dd>Describing the use of ARIA attributes on HTML elements.</dd>
+
+              <dt><a href="http://www.w3.org/TR/microdata/">Microdata</a></dt>
+                <dd>Widely-used attributes on HTML elements to provide metadata, e.g. as Schema.org or Dublin Core.</dd>
             </dl>
           </dd>
 
           <dt id="manifest"><a href="http://w3c.github.io/manifest/">Manifest for Web applications</a></dt>
-          <dd>A JSON-based manifest, which provides developers with a
-	    centralized place to put metadata about a web application.</dd>
+            <dd>A JSON-based manifest, to provide metadata about a web application.</dd>
 
           <dt id='network'>Network</dt>
-          <dd>Specifications that allow network communications:
-            <dl>
-              <dt><a href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/">(@@W3C version) Service Workers</a></dt>
-                <dd>A new feature for the Web Platform that lets a
-		  script persistently cache resources and handle all resource requests
-  		  for an application -- even when the network isn't available.</dd>
-              <dt id="web-sockets"><a title="Web Sockets API" href="https://github.com/w3c/websockets/">Web
-                  Sockets API</a></dt>
-                <dd>An API that enables Web pages to use the Web Sockets protocol for
-                  two-way communication with a remote host.</dd>
-
-<del>
-              <dt id='http'>HTTP client interactions</dt>
-                <dd>
-                  <dl>
-                    <dt id="xhr"><a href="https://dvcs.w3.org/hg/xhr/raw-file/default/xhr-1/Overview.html">XHR Level 1</a></dt  >
-                      <dd>An API that provides scripted client functionality for transferring data
-                        between a client and a server.</dd>
-                    <dt>Fetching resources</dt>
-                      <dd>The Group MAY define the mechanisms to fetch resources using the HTTP
-                        protocol and its extensions.</dd>
-                  </dl>
-                </dd>
-              <dt id="streams-api"><a href="https://w3c.github.io/streams-api/">Streams API</a></dt>
-                <dd>An API for representing a stream of data in web applications.</dd>
-            </dl>
-          </dd>
-</del>
+            <dd>Specifications that allow network communications:
+              <dl>
+                <dt><a href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/">Service Workers</a></dt>
+                  <dd>Persistently cache resources and handle all resource requests for an application via script,
+                    including when the network isn't available.</dd>
+                <dt id="web-sockets"><a title="Web Sockets API" href="https://github.com/w3c/websockets/">Web Sockets API</a></dt>
+                  <dd>An API to use the Web Sockets protocol for two-way communication with a remote host.</dd>
 
           <dt id="pointer-lock"><a href="https://w3c.github.io/pointerlock/">Pointer Lock</a></dt>
             <dd>Defines APIs that provide scripted access to raw mouse movement data
 	      while locking the target of mouse events to a single element and removing
 	      the cursor from view.</dd>
 
-        <dt id='push'><a href='https://w3c.github.io/push-api/'>Push API</a></dt>
-          <dd>An API that provides web applications scripted access to server-sent notifications.</dd>
-        <dt id="screen-orientation"><a href="https://w3c.github.io/screen-orientation/">Screen Orientation API</a></dt>
-          <dd>A view orientation and locking API, e.g. to enable reading the
-            view's orientation state, locking view orientation, notification of
-            view orientation state changes. </dd>
+          <dt id='push'><a href='https://w3c.github.io/push-api/'>Push API</a></dt>
+            <dd>An API that provides web applications scripted access to server-sent notifications.</dd>
 
-<del>
-        <dt id="url"><a href="https://url.spec.whatwg.org/">URL</a></dt>
-          <dd>The Group MAY provide a specification defining the syntax, process and error handling
-              for resolving URL, along with its API.</dd>
-</del>
+          <dt id="screen-orientation"><a href="https://w3c.github.io/screen-orientation/">Screen Orientation API</a></dt>
+            <dd>An API to enable reading or locking view orientation, and notification of view orientation state changes.</dd>
 
           <dt id="webcomponents">Web Components</dt>
-          <dd>Specifications that define mechanisms for adding custom
-            elements to a document which allows them to have well-defined behavior
-            and rendering.
-	    <dl>
-	      <dt><a href="http://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></dt>
-	      <dd>Methods for enabling the author to define and use new
-		types of DOM elements in a document.</dd>
-	      <dt><a href="http://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></dt>
-	      <dd>A method of establishing and maintaining functional
-		boundaries between DOM trees and how these trees interact with
-		each other within a document, thus enabling better functional
-		encapsulation within the DOM.</dd>
-　　　　　　　</dl>
-　　　　　　</dd>
-          <dt id="webidl"><a href="http://heycam.github.io/webidl/">Web Interface
-              Definition Language (Web IDL)</a></dt>
-          <dd>Language bindings and types for Web interface descriptions.</dd>
-
-          <dt id="web-workers"><a title="Web Workers" href="https://w3c.github.io/workers/">Web
-             Workers</a></dt>
+            <dd>Adding custom elements to a document, with well-defined behavior and rendering.
+              <dl>
+                <dt><a href="http://w3c.github.io/webcomponents/spec/custom/">Custom Elements</a></dt>
+                  <dd>Define and use newtypes of DOM elements in a document.</dd>
+                <dt><a href="http://w3c.github.io/webcomponents/spec/shadow/">Shadow DOM</a></dt>
+                  <dd>Functional boundaries between DOM trees and how these trees interact with each other within a document,
+                    enabling better functional encapsulation within the DOM.</dd>
+              </dl></dd>
+          <dt id="webidl"><a href="http://heycam.github.io/webidl/">Web Interface Definition Language (Web IDL)</a></dt>
+            <dd>Language bindings and types for Web interface descriptions.</dd>
+          <dt id="web-workers"><a title="Web Workers" href="https://w3c.github.io/workers/">Web Workers</a></dt>
           <dd>An API that allows Web application authors to spawn background
             workers running scripts in parallel to their main page, allowing for
             thread-like operation with message-passing as the coordination
             mechanism.</dd>
-
-          </dd>
         </dl>
-        <p>The following deliverables may be picked up once they have gone through an incubation phase:</p>
+
+        <p>The following deliverables may be developed if they have had sufficient incubation to expect success:</p>
         <dl>
-          <dt><a href="https://w3c.github.io/ime-api/">Input
-              Method (IME) API</a></dt>
-          <dd>The Group MAY define an API that provides access to a (native) input method editor.</dd>
-          <dt id="file-system-2"><a href="http://w3c.github.io/filesystem-api/">FileSystem
-            API</a></dt>
-          <dd>A local sandboxed file system API exposed only to Web Applications.</dd>
+          <dt><a href="https://w3c.github.io/ime-api/">Input Method (IME) API</a></dt>
+           <dd>The Group MAY define an API that provides access to a (native) input method editor.</dd>
+          <dt id="file-system-2"><a href="http://w3c.github.io/filesystem-api/">FileSystem API</a></dt>
+           <dd>A local sandboxed file system API exposed only to Web Applications.</dd>
           <dt id="packaging"><a href="http://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a></dt>
-          <dd>Defines an approach for creating packages of files for use on the web.</dd>
+           <dd>Defines an approach for creating packages of files for use on the web.</dd>
+          <dt><a href="https://w3c.github.io/quota-api/">Quota Management API</a></dt>
+           <dd>An API for managing the amount of storage space (short- or long-term) available.</dd>
           <dt id="robust-anchoring"><a href='http://w3c.github.io/findtext/'>FindText API</a></dt>
-          <dd>APIs for linking to a document selection, even when the document
+           <dd>APIs for linking to a document selection, even when the document
             has changed. This is a joint deliverable with the Web
             Annotation WG.</dd>
-        <dt><a href="http://w3c.github.io/webcomponents/spec/imports/">HTML Imports</a></dt>
-        <dd>A way to include and reuse HTML documents in another
-    HTML documents.</dd>
+          <dt><a href="http://w3c.github.io/webcomponents/spec/imports/">HTML Imports</a></dt>
+           <dd>A way to include and reuse HTML documents in another HTML documents.</dd>
           <dt><a href="https://slightlyoff.github.io/BackgroundSync/spec/">Web Background Synchronization</a></dt>
-          <dd>A specification describing a method that enables Web applications to synchronize data when next online.</dd>
+           <dd>A specification describing a method that enables Web applications to synchronize data when next online.</dd>
         </dl>
 
-        <p>Each specification should contain a section detailing any known
-          security implications for implementers, Web authors, and end users.
-          The Web Platform WG will actively seek security, privacy,
-          internationalization and accessibility review on all its
-          specifications.</p>
-        <p>After a specification reaches Recommendation status the working group
-          may begin work on, and deliver an updated version of the specification
-          under this charter. Specifications may be moved to Recommendation and
-          a subsequent version begun in order to facilitate the progress of
-          other work which depends on a stable reference.</p>
+        <p>Each specification should detail any known security implications for implementers, Web authors, and end users.</p>
+        <p>The Web Platform WG will actively seek security, privacy, internationalization and accessibility review on all
+          its specifications.</p>
+        <p>If a specification reaches Recommendation status the working group may work on, and deliver an updated version
+          of the specification under this charter. Specifications may be moved to Recommendation and a subsequent version begun
+          to facilitate the progress of other work which depends on a stable reference.</p>
         <p>The Working Group will not adopt new proposals until they have
           matured through the <a href="incubator-cg-charter.html">Web Platform
           Incubator Community Group</a> or another similar incubation phase. If
           the Working Group decides to add new Recommendation-track deliverables
           then it will recharter with changes to that new charter limited to
           just the changes in deliverables.</p>
-        <p>For a detailed summary of the current list of deliverables, and an
-          up-to-date timeline, see the Web Platform WG <a title="PubStatus - WEBPLATFORM"
-            href="https://w3c.github.com/webplatform-wg/PubStatus.md">Publication
-            Status</a> page.</p>
+        <p>For current information on the list of deliverables and their status see the Web Platform WG
+          <a href="https://w3c.github.io/webplatform-wg/PubStatus.md">Publication Status</a> page.</p>
 
         <h4 id="maintenance">2.1.1. Specification Maintenance</h4>
-        <p>The working group will maintain errata and new editions, as
-          necessary, for the following Recommendation-status specifications:</p>
+        <p>The working group will maintain errata and publish revisions, as necessary, for the following W3C Recommendations:</p>
         <ul>
-          <li id="cors">
-	     <a href="http://www.w3.org/TR/cors/">CORS</a></li>
+          <li id="cors"><a href="http://www.w3.org/TR/cors/">CORS</a></li>
           <li id="dom">DOM specifications</li>
-          <li id="html50"><a href="http://www.w3.org/TR/html5/">HTML 5.0</a></li>
-          <li><a href="http://www.w3.org/TR/html-longdesc/">HTML5 Image Description Extension</a></li>
-          <li id="idb"><a href="http://www.w3.org/TR/IndexedDB/">Indexed Database API</a></li>
-          <li><a href="http://www.w3.org/TR/2dcontext/">HTML Canvas 2D Context</a></li>
-          <li id="progress">
-	     <a href="http://www.w3.org/TR/progress-events/">Progress Events</a></li>
+          <li id="progress"><a href="http://www.w3.org/TR/progress-events/">Progress Events</a></li>
 	  <li id='sse'><a href="http://www.w3.org/TR/eventsource/">Server-sent Events</a></li>
-          <li id="view-mode">
-             <a href="http://www.w3.org/TR/view-mode/">view-mode Media Feature</a></li>
-          <li id="webstorage">
-             <a href="http://www.w3.org/TR/webstorage/">Web Storage</a></li>
-          <li id='webmessaging'><a href="http://www.w3.org/TR/webmessaging/">Web
-              Messaging</a></li>
+          <li id="view-mode"><a href="http://www.w3.org/TR/view-mode/">view-mode Media Feature</a></li>
+          <li id="webstorage"><a href="http://www.w3.org/TR/webstorage/">Web Storage</a></li>
+          <li id='webmessaging'><a href="http://www.w3.org/TR/webmessaging/">Web Messaging</a></li>
         </ul>
 
         <h3 id="other-deliverables">Other Deliverables</h3>
@@ -409,270 +350,192 @@
             is encouraged. </p>
         </section>
         <h3 id="milestones">Milestones</h3>
-        <p>The group's <a href="https://w3c.github.com/webplatform-wg/@@">Specification Status</a>
-	  document provides current data about all of the group's specifications,
-	  including Technical Report publication plans and testing status.
-	  Although the group expects all of its specifications to progress during this
-	  charter period, the charter does not include detailed <em>milestone</em>
-	  data for each specification because such data is speculative and easily
-	  becomes out of date. However, for each of these specifications,
-	  some milestone predictions are provided, but please see the
-	  <a href="https://w3c.github.com/webplatform-wg/PubStatus.md">Specification Status</a>
-	  document for accurate data.</p>
+        <p>The group's <a href="https://w3c.github.io/webplatform-wg/PubStatus.md">Publication Status</a>
+	  document provides current data about all of the group's specifications.
+	  Although the group expects all of its active deliverables to progress during this
+	  charter period, the charter does not include detailed <em>milestone</em> data for each specification because
+          such data is speculative and easily becomes out of date. The Working Group does expect to the following to occur:</p>
 	<ul>
-    <li>Web Storage (2nd edition): Recommendation expected in 2016</li>
-    <li>Web Workers: Recommendation expected in 2016</li>
-    <li>Web Sockets: Recommendation expected in 2016</li>
-	  <li>DOM Parsing and Serialization: Recommendation expected in 2016</li>
-	  <li>Web IDL: Recommendation expected in early 2016</li>
+          <li>HTML 5.2 Recommendation in Q4 2017</li>
+          <li>HTML 5.3 First Public Working Draft in Q3 2017</li>
+          <li>IndexedDB version 2 Candidate Recommendation in Q1 2017</li>
+          <li>IndexedDB version 3 First Public Working Draft in Q1 2017</li>
+          <li>Web Sockets: Recommendation expected in 2017</li>
+	  <li>DOM Parsing and Serialization: Recommendation expected in 2017</li>
+	  <li>Web IDL: Recommendation expected in early 2017</li>
 	</ul>
       </section>
 
       <section class="dependencies">
         <h2 id="coordination">Dependencies and Liaisons</h2>
-        <h3>Dependencies</h3>
-        <p>A number of specifications depend on the WebIDL specification, which
-          is therefore a very high priority for the Working Group. </p>
-        <p>The Web Sockets specification has an effective dependency on the
-          protocol defined by the <a href="http://www.ietf.org/dyn/wg/charter/hybi-charter.html">IETF's
-            HyBi Working Group</a>. </p>
-
-	<p>
-	  Given the large number of deliverables and therefore also
-dependencies between this working group and accessibility groups, the
-Web Platform team contact(s) will liaise with the team contact for Accessible Platform Architectures and Accessible Rich Internet Applications Working Groups
-in order to ensure early identification of specifications with
-potential accessibility aspects, and to ensure coordination as needed
-during their development.
-        </p>
-
-        <p>The specifications of several other groups, such as <a href="http://www.w3.org/Graphics/SVG"> SVG</a>, depend upon
-          particular Web Platform Working Group specifications.
-          Where possible, additional dependencies will be
-          avoided to prevent the disruption of dependent deliverables. </p>
-        <h3 id="liaisons">Liaisons</h3>
-        <p>The Web Platform Working Group expects to maintain contacts with
-          at least the following groups and Activities within W3C (in
-          alphabetical order): </p>
+        <p>HTML depends on, and is depended on by, many specifications.</p>
+        <p>Many specifications in many Working Groups depend on WebIDL.</p>
+        <p>Web Sockets depends on work in the 
+          <a href="http://www.ietf.org/dyn/wg/charter/hybi-charter.html">IETF's HyBi Working Group</a>. </p>
+	<p>This working group depends on review of aspects such as accessibility, internationalisation and privacy in its
+          deliverables</p>
+          
+        <p>The Web Platform Working Group will keep contact with and where applicable request review from at least the following:</p>
         <dl>
-          <dt><a href="http://www.w3.org/2015/04/draft-spec-charter">Accessible Platform Architectures Working Group</a></dt>
-          <dd>
-            This Group ensures W3C specifications provide support for accessibility to people with disabilities.
-          </dd>
-          <dt><a href="http://www.w3.org/2015/04/draft-aria-charter">Accessible Rich Internet Applications Working Group</a></dt>
-          <dd>
-            This Group develops technologies that enhance accessibility of Web content for people with disabilities, including the Accessible Rich Internet Applications (WAI-ARIA) suite of technologies.
-          </dd>
-          <dt><a href="http://www.w3.org/testing/browser/" id="browser-testing">Browser Testing and Tools
-              Working Group</a></dt>
-          <dd>This group's Web Driver specification is of interest to the
+          <dt><a href="http://www.w3.org/2015/04/draft-spec-charter" title="@@update link">Accessible Platform Architectures Working Group</a></dt>
+            <dd>This Group ensures W3C specifications provide support for accessibility to people with disabilities.</dd>
+          <dt><a href="http://www.w3.org/2015/04/draft-aria-charter" title="@@update link">Accessible Rich Internet Applications Working Group</a></dt>
+            <dd>This Group develops ARIA</dd>
+          <dt><a href="http://www.w3.org/testing/browser/" id="browser-testing">Browser Testing and Tools Working Group</a></dt>
+            <dd>This group's Web Driver specification is of interest to the
 	    Web Platform WG.</dd>
           <dt><a href="http://www.w3.org/Style/Group/" id="css">Cascading Style
               Sheets Working Group</a></dt>
-          <dd>To collaborate on the Fullscreen API specification and CSS related
-	    aspects of specifications (such as Shadow DOM).</dd>
-          <dt><a href="http://www.w3.org/2009/dap/" id="dap">Device APIs Working
-              Group</a></dt>
-          <dd>To coordinate regarding APIs for device services.</dd>
+          <dd>To collaborate on CSS-related aspects of specifications such as Shadow DOM.</dd>
+          <dt><a href="http://www.w3.org/2009/dap/" id="dap">@@Device APIs Working Group</a></dt>
+            <dd>To coordinate regarding APIs for device services.</dd>
           <dt><a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a></dt>
-          <dd>This group may provide advice or review to ensure that Web Platform WG
-            deliverables interact correctly in the context of the  digital publishing ecosystem.</dd>
-          <dt><a href="http://www.w3.org/International/core/">Internationalization
-              Core Working Group</a></dt>
-          <dd>This group may provide advice or review to ensure that Web Platform WG
-            deliverables meet the needs of an international Web. In particular
-            the Working Group will request close review of the IME API.</dd>
-            <dt><a href="https://www.w3.org/Math/">Math Working Group</a></dt>
-            <dd>The HTML markup language includes support for embedding MathML content.</dd>
-          <dt><a href="http://www.w3.org/2012/pointerevents/">Pointer Events
-	      Working Group</a></dt>
-          <dd>This group creates DOM extension specifications and is interested in
-	    Web Platform' DOM Level 3 Events and UI Events specifications.</dd>
+            <dd>This group has a core interest in the manifest and packaging deliverables.</dd>
+          <dt><a href="http://www.w3.org/International/core/">Internationalization Core Working Group</a></dt>
+            <dd>This group provides advice or review to ensure that specifications meet the needs of an international Web.</dd>
+          <dt><a href="http://www.w3.org/2012/pointerevents/">Pointer Events Working Group</a></dt>
+            <dd>This group creates DOM extension specifications and is interested in DOM Level 3 Events and UI Events.</dd>
           <dt><a href="http://www.w3.org/Privacy/">Privacy Interest Group</a> (PING)</dt>
-          <dd>The Web Platform WG will request review of specifications and
-            communicate as necessary with this group. </dd>
-          <dt><a href="http://www.w3.org/Graphics/SVG" id="svg">SVG (Scalable
-              Vector Graphics) Working Group</a></dt>
-          <dd>To monitor the development of the SVG specification as it
-            complements the Web Platform WG's specifications, and to help ensure SVG
-            requirements for the Web Platform WG's deliverables are met. The HTML markup language includes support for embedding SVG content and provides support for graphics API, such as the 2D Context API.</dd>
+            <dd>The Web Platform WG will request review of specifications from this group. </dd>
+          <dt><a href="http://www.w3.org/Graphics/SVG" id="svg">SVG (Scalable Vector Graphics) Working Group</a></dt>
+            <dd>To help ensure SVG requirements for the Web Platform WG's deliverables are met. The HTML markup language
+              supports embedding SVG content and provides support for the Canvas 2D Context API.</dd>
           <dt><a href="http://www.w3.org/2001/tag/">Technical Architecture Group</a></dt>
-          <dd>The Web Platform WG will ask the Technical Architecture Group to
-            review some set of its specifications and will help, through a
-	    joint task force, the development of the URL specification
-	    and the Packaging on the Web specification.</dd>
-          <dt id='timedmedia'><a href="http://www.w3.org/2015/07/timed-media-charter">Timed Media Group</a> (proposed)</dt>
-          <dd>The Timed Media Working Group develops timed media capabilities in the Open Web Platform.</dd>
-          <dt><a href="http://www.w3.org/WAI/UA/" id="uawg">User Agent
-              Accessibility Guidelines Working Group</a></dt>
-          <dd>To ensure that Web Platform WG deliverables support accessibility
-            requirements, particularly with regard to interoperability with
-            assistive technologies, and inclusion in deliverables of guidance
-            for implementing Web Platform deliverables in ways that support
-            accessibility requirements. (This Group is expected to combine into an all-guidelines group in 2016 2Q).</dd>
-          <dt><a href="http://www.w3.org/annotation/">Web Annotation Working Group</a></dt>
-          <dd>The Web Platform Working Group has a joint deliverable with this group regarding
-            robust anchoring.</dd>
+            <dd>The Web Platform WG will ask the Technical Architecture Group to review specifications.</dd>
           <dt><a href="http://www.w3.org/Mobile/IG/">Web and Mobile Interest Group</a></dt>
           <dd>This group may provide advice or review to ensure that Web Platform WG
             deliverables interact correctly in the context of Mobile applications.</dd>
           <dt><a href="http://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
-          <dd>This Group is to provide a forum for Web and TV technical discussions, to review existing work, as well as the relationship between services on the Web and TV services, and to identify requirements and potential solutions to ensure that the Web will function well with TV. </dd>
-          <dt><a href="http://www.w3.org/2011/webappsec/">Web Applications
-              Security Working Group</a></dt>
-          <dd>As well as having a joint deliverable (CORS), this group has many
-            overlapping interests with the Web Platform WG.</dd>
-          <dt><a href="http://www.w3.org/2010/webperf/">Web Performance Working
-              Group</a></dt>
-          <dd>This group focuses on performance of the Web Platform, including
-            deliverables of the Web Platform WG.</dd>
+          <dd>This Group may review existing work, as well as the relationship between services on the Web and TV services,
+            and identify requirements and potential solutions to ensure that the Web will function well with TV. </dd>
+          <dt><a href="http://www.w3.org/2011/webappsec/">Web Applications Security Working Group</a></dt>
+          <dt><a href="http://www.w3.org/2010/webperf/">Web Performance Working Group</a></dt>
+            <dd>Many of their specifications extend Web Platform WG deliverables.</dd>
           <dt><a href="https://www.w3.org/community/wicg/">Web Platform Incubator Community Group</a></dt>
-          <dd>
-            This group provides a lightweight venue for proposing, incubating and discussing new web platform features.
-          </dd>
-          <dt><a href="http://www.w3.org/2011/04/webrtc/">Web Real-Time Communications
-	      Working Group</a></dt>
+            <dd>This group provides a venue for proposing, incubating and discussing new web platform features to prepare them
+              for standardisation, often in the Web Platform WG.</dd>
           <dd>This group creates API specifications for Real-Time Communications in Web browsers.</dd>
           <dt><a href="http://www.w3.org/Security/wiki/IG">Web Security Interest Group</a></dt>
-          <dd>The Web Platform WG will request review of specifications and
-            communicate as necessary with this group.</dd>
+          <dd>The Web Platform WG will request review of specifications from this group.</dd>
         </dl>
-      <p>
-  The Working Group will consider proposals for future
-  specifications from Community Groups, encourage open
-  participation from Community Group members, and keep
-  coordination with relevant Community Groups, all within the bounds
-  of the W3C patent policy and available resources.
-      </p>
+
         <section>
           <h3 id="external-groups">External Groups</h3>
-          <p>The following is a tentative list of external bodies the Working
-            Group should collaborate with: </p>
+          <p>The Working Group may also collaborate with: </p>
           <dl>
-            <dt><a href="http://www.ecma-international.org/memento/TC39.htm" id="tc39">ECMA
-                Technical Committee 39 (TC39)</a></dt>
-            <dd>This is the group responsible for ECMAScript standardization,
-              and related ECMAScript features like E4X. As the Web Applications
-              Working Group will be developing ECMAScript APIs, it should
-              collaborate with TC39.</dd>
-            <dt><a title="IETF Home Page" href="http://www.ietf.org/" id="ietf">Internet
-                Engineering Task Force</a></dt>
-            <dd>The IETF is responsible for defining robust and secure protocols
-              for Internet functionality. A close relationship with the IETF
-              HTTP group is crucial to ensuring the good design, deployment, and
-              success of protocol-based APIs such as CORS and Web Sockets. This
-              Working Group will rely upon review and parallel progress of
-              associated specifications, and will keep pace with the IETF's HTTP
-              and <a href="http://www.ietf.org/dyn/wg/charter/hybi-charter.html">HyBi</a>
-              groups' work, conditional upon steady progress. The working group
-              may well also liaise with the IETFs Web Security Working Group,
-              either directly or through its liaison with the W3C's Web
-              Applications Security Working Group. </dd>
+            <dt><a href="http://www.ecma-international.org/memento/TC39.htm" id="tc39">ECMA Technical Committee 39 (TC39)</a></dt>
+              <dd>This is the group responsible for ECMAScript standardization, and related ECMAScript features like E4X.
+                As the Web Applications Working Group will be developing ECMAScript APIs, it should collaborate with TC39.</dd>
+
+            <dt><a title="IETF Home Page" href="http://www.ietf.org/" id="ietf">Internet Engineering Task Force</a></dt>
+              <dd>The IETF is responsible for defining robust and secure protocols for Internet functionality. A 
+                close relationship with the IETF HTTP group is crucial to ensuring the good design, deployment, and success
+                of protocol-based APIs such as CORS and Web Sockets. This Working Group will rely upon review and parallel
+                progress of associated specifications, and will keep pace with the IETF's HTTP and
+                <a href="http://www.ietf.org/dyn/wg/charter/hybi-charter.html">HyBi</a> groups' work, conditional upon steady
+                progress. The working group may also liaise with the IETFs Web Security Working Group, either directly or
+                through its liaison with the W3C's Web Applications Security Working Group. </dd>
+
             <dt><a href="https://whatwg.org/">WHATWG</a></dt>
-            <dd>
-              A number of the specifications are derived from specifications originally written at the WHATWG and still being maintained there. For these specifications, the Web Platform Working Group should make an effort to work with the WHATWG editors to avoid differences between the WHATWG and Web Platform WG specifications that would harm interoperability on the Web.
-            </dd>
+              <dd>Some deliverables are derived from specifications originally written at the WHATWG, or for which a version is
+                maintained there. The Web Platform Working Group should make an effort to avoid differences between WHATWG and
+                Web Platform WG specifications that harm interoperability on the Web.</dd>
           </dl>
         </section>
       </section>
+
       <section class="participation">
         <h2 id="participation">Participation</h2>
-        <p>To be successful, the Web Platform Working Group is expected to
-          have 10 or more active participants for its duration, and to have the
-          participation of industry leaders in fields relevant to the
-          specifications it produces.</p>
-        <p>The Chairs, specification Editors and test Facilitators are expected
-          to contribute one to two days per week towards the Working Group.
-          There is no minimum requirement for other Participants.</p>
-        <p>The Web Platform Working Group welcomes participation, with
-          agreement from each participant to the provisions of the W3C Patent
-          Policy.</p>
+        <p>To be successful, the Web Platform Working Group is expected to have 10 or more active participants for its duration,
+          and to have the participation of industry leaders in fields relevant to the specifications it produces.</p>
+        <p>The Chairs, specification Editors and test Facilitators are expected to contribute one to two days per week
+         towards the Working Group. There is no minimum requirement for other Participants.</p>
       </section>
+
       <section class="communication">
         <h2 id="communication">Communication</h2>
-        <p>The <a href="http://www.w3.org/WebPlatform/WG/">working
-            mode</a> of the group is described in detail on its wiki. In general
-          the group does not hold plenary teleconferences, but does meet face to face at the
-          TPAC. It may hold more meetings, and certain specifications are
-          developed with regular teleconferences. Note the <a href="#decisions">Decision
-            Policy</a> below with regards to meetings. </p>
-        <p>
-        The Working Group <strong>conducts its work primarily through <a href='https://github.com/orgs/w3c/teams/WebPlatformWG/repositories'>GitHub repositories</a></strong>,
-        for contributions and communications.
-        Similar to open-source software development,
-        peer production is encouraged: changes will be executed through Pull Requests, with pull requests reviewed before being merged.
-        The Chairs must ensure that regular activity summaries around the GitHub repositories activity are provided.</p>
-        <p>The Group may use mailing lists. Subscription
-          to these lists is open to the public, subject to W3C norms of
+        <p>The <a href="http://www.w3.org/WebPlatform/WG/">working mode</a> of the group is described in detail on its wiki.
+          In general the group does not hold plenary teleconferences, but does meet face to face at the TPAC. It may hold
+          more meetings, and certain specifications are developed with regular teleconferences. Note the
+          <a href="#decisions">Decision Policy</a> below with regards to meetings. </p>
+        <p>The Working Group conducts its work primarily through
+          <a href='https://github.com/orgs/w3c/teams/WebPlatformWG/repositories'>GitHub repositories</a>.
+        <p>The Group uses mailing lists. Subscription to these lists is open to the public, subject to W3C norms of
           behavior. </p>
-        <p>Up-to-date information about the group (for example, details about
-          deliverables, issues, actions, status, and participants) is available from
-          the <a href="http://www.w3.org/WebPlatform/WG/">Web
-            Platform Working Group home page</a>.</p>
+        <p>Up-to-date information about the group is available from
+          the <a href="http://www.w3.org/WebPlatform/WG/">Web Platform Working Group home page</a>.</p>
       </section>
+
       <section class="decisions">
         <h2 id="decisions">Decision Policy</h2>
-        <p>As explained in the W3C Process Document (<a href="http://www.w3.org/Consortium/Process/policies#Consensus">section
-            3.3</a>), this group will seek to make decisions when there is
-          consensus and with due process. The expectation is that typically, an
-          editor or other participant makes an initial proposal, which is then
-          refined in discussion with members of the group and other reviewers,
-          and consensus emerges with little formal voting being required.
-          However, if a decision is necessary for timely progress, but consensus
-          is not achieved after careful consideration of the range of views
-          presented, the Chairs may put a question out for voting within the
-          group  to allow for asynchronous participation, using the mechanism
-          noted in the group's <a href="https://github.com/w3c/WebPlatformWG/blob/gh-pages/WorkMode.md">Work Mode</a>
-          documents, and record a
-          decision, along with any objections. The matter should then be
-          considered resolved unless and until new information becomes
-          available.</p>
-        <p><strong>Any resolution taken in a face-to-face meeting or teleconference is
-          to be considered provisional until 10 working days after the
-          publication of the resolutions in meeting minutes sent to the appropriate working
-          group mailing list as described in the <a href="https://github.com/w3c/WebPlatformWG/blob/gh-pages/WorkMode.md">Work Mode</a>
-          documents. If no objections are raised on the mailing list
-          within that time, the resolution will be considered to have consensus
+        <p>As required by the W3C Process Document
+         (<a href="http://www.w3.org/Consortium/Process/policies#Consensus">section 3.3</a>), this group will seek to make
+          decisions when there is consensus and with due process. The expectation is that, an editor or other participant makes
+          an initial proposal, which is refined in discussion with members of the group and other reviewers,
+          and consensus emerges with little formal voting being required.</p>
+        <p>If a decision is necessary for timely progress, but consensus is not achieved after careful consideration of the
+          range of views presented, the Chairs may put a question out for voting within the group  to allow for asynchronous
+          participation, using the mechanism noted in the group's
+          <a href="https://github.com/w3c/WebPlatformWG/blob/gh-pages/WorkMode.md">Work Mode</a>
+          documents, and record a decision, along with any objections. The matter should then be considered resolved
+          unless and until new information becomes available.</p>
+        <p><strong>Any resolution taken in a face-to-face meeting or teleconference is to be considered provisional until
+          10 (ten) working days after the publication of the resolutions in meeting minutes sent to the appropriate working
+          group mailing list as described in the
+          <a href="https://github.com/w3c/WebPlatformWG/blob/gh-pages/WorkMode.md">Work Mode</a> documents. If no objections
+          are raised on the mailing list within that time, the resolution will be considered to have consensus
           as a resolution of the Working Group.</strong></p>
-        <p>This charter is written in accordance with <a href="http://www.w3.org/Consortium/Process/policies#Votes">Section
-            3.4, Votes</a> of the W3C Process Document and includes no voting
-          procedures beyond what the Process Document requires. </p>
+        <p>This charter is written in accordance with
+          <a href="http://www.w3.org/Consortium/Process/policies#Votes">Section 3.4, Votes</a> of the W3C Process Document
+          and includes no voting procedures beyond what the Process Document requires. </p>
       </section>
       <section class="patent">
         <h2 id="patentpolicy">Patent Policy </h2>
-        <p>This Working Group operates under the <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">W3C
-            Patent Policy</a> (5 February 2004 Version). To promote the widest
-          adoption of Web standards, W3C seeks to issue Recommendations that can
+        <p>This Working Group operates under the
+          <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">W3C Patent Policy</a> (5 February 2004 Version).
+          To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can
           be implemented, according to this policy, on a Royalty-Free basis. </p>
-        <p>For more information about disclosure obligations for this group,
-          please see the <a href="http://www.w3.org/2004/01/pp-impl/">W3C
-            Patent Policy Implementation</a>. </p>
+        <p>For more information about disclosure obligations for this group, please see the
+          <a href="http://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>. </p>
       </section>
+
       <section class="licensing">
         <h2 id="licensing">Licensing</h2>
-        <p>This Working Group will use the <a href='http://www.w3.org/Consortium/Legal/copyright-software'>W3C Software and Document license</a> for all its deliverables.</p>
+        <p>This Working Group will use the
+          <a href='http://www.w3.org/Consortium/Legal/copyright-software'>W3C Software and Document license</a>
+          for all its deliverables.</p>
       </section>
+
       <section class="patent">
         <h2 id="about">About this Charter</h2>
-        <p>This charter for the Web Platform Working Group has been created
-          according to <a href="http://www.w3.org/Consortium/Process/groups#GAGeneral">section
-            5</a> of the <a href="http://www.w3.org/Consortium/Process">Process
-            Document</a>. In the event of a conflict between this document or
-          the provisions of any charter and the W3C Process, the W3C Process
-          shall take precedence. </p>
+        <p>This charter for the Web Platform Working Group has been created according to
+          <a href="http://www.w3.org/Consortium/Process/groups#GAGeneral">section 5</a> of the
+          <a href="http://www.w3.org/Consortium/Process">Process Document</a>. In the event of a conflict between
+          this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence. </p>
+      </section>
+
+      <section>
+        <h3 id="changes-from-wp1">Changes from the previous charter</h3>
+        <p>The major changes from the <a href="">first Web platform Working Group charter</a> include:<p>
+        <dl>
+          <dt>New deliverables:</dt>
+            <dd>Microdata</dd>
+          <dt>Removed as deliverables:</dt>
+            <dd>Streams; URL; XHR1</dd>
+          <dt>Marked as deliverables to be taken up if incubation suggests likely success:</dt>
+            <dd>Background Synchronisation; Filesystem API; FindText API; HTML Import; Input Methods; Packaging; Quota API</dd>
+        </dl>
       </section>
 
       <hr />
-      <address> Yves Lafon, Team Contact <br />
-        Xiaoqian Wu, Team Contact <br />
-        TBD, Team Contact <br />
-        Adrian Bateman, Chair <br />
-        Art Barstow, Chair <br />
-        Charles McCathie Nevile, Chair <br />
-        L&eacute;onie Watson, Chair</address>
-      <p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
-          rel="Copyright">Copyright</a>©
-        2015 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+      <address> Yves Lafon, Team Contact<br>
+        Xiaoqian Wu, Team Contact<br>
+        Philippe Le Hégaret, Team Contact<br>
+        Adrian Bateman, Chair<br>
+        Charles McCathie Nevile, Chair<br>
+        Léonie Watson, Chair</address>
+      <p class="copyright"> <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright" rel="Copyright">Copyright</a>©
+        2016 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
         <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
         <a href="http://www.keio.ac.jp/">Keio</a>,
