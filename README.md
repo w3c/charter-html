@@ -2,9 +2,9 @@
 
 Group charters
 
-### [Web Platform WG proposal](http://w3c.github.io/charter-html/group-charter.html)
+### [Web Platform WG proposal](http://w3c.github.io/charter-html/webplat-wg.html)
 
-This is a proposal for the period October 2016 to March 2018.
+This is a proposal for the period June 2017 to September 2018.
 
  * http://w3c.github.io/charter-html/timed-media-wg.html
 
